@@ -1,0 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.center {
+  max-width: 1515px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body .wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 115px;
+  background-color: #FFFFFF;
+}
+
+body header h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #14125F;
+  cursor: pointer;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+body header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 445px;
+}
+
+body header ul li {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1B1B20;
+  cursor: pointer;
+}
+
+body header button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8B1CFB), to(#B02CDF));
+  background: linear-gradient(180deg, #8B1CFB 0%, #B02CDF 100%);
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid #8B1CFB;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  cursor: pointer;
+  letter-spacing: 0.08em;
+}
+
+body .one {
+  background: right 0 no-repeat url("/images/spot.png");
+}
+
+body .one .wrapper-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .one .wrapper-one div {
+  width: 743px;
+  margin-bottom: 256px;
+}
+
+body .one .wrapper-one div h1 {
+  font-family: "Fredoka";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 120%;
+  color: #252525;
+  margin: 110px 0px 36px 0px;
+}
+
+body .one .wrapper-one div p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #626262;
+  margin-bottom: 60px;
+}
+
+body .one .wrapper-one div .btn {
+  margin-bottom: 12px;
+}
+
+body .one .wrapper-one div .btn .btn-left {
+  width: 224px;
+  height: 66px;
+}
+
+body .one .wrapper-one div .btn .btn-right {
+  width: 224px;
+  height: 66px;
+}
+
+body .one .wrapper-one .fitcoin {
+  width: 426px;
+  height: 504px;
+  margin-right: 67px;
+  margin-top: 101px;
+}
+/*# sourceMappingURL=style.css.map */

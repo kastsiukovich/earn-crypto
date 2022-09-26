@@ -1,0 +1,106 @@
+@import "./nullstyle";
+
+@mixin ft($ff, $fst, $fw, $fs, $lh, $c){
+   font-family: $ff;
+   font-style: $fst;
+   font-weight: $fw;
+   font-size: $fs;
+   line-height: $lh;
+   color: $c;
+   // background-image: $c; 
+   // linear-gradient(#14125F 100%, #1E1C75 21%)
+}
+$color-white: #FFFFFF;
+.center{
+   max-width: 1515px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+body{
+   .wrapper{
+      width: 100%;
+      max-width: 1920px;
+      margin: 0 auto;
+   }
+   font-family: 'Fredoka', sans-serif;
+   font-family: 'Inter', sans-serif;
+   font-family: 'Montserrat', sans-serif;
+   header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 115px;
+      background-color: $color-white;
+      h1{
+         @include ft('Inter', normal, 700, 24px, 120%, #14125F);
+         cursor: pointer;
+         letter-spacing: 0.08em;
+         text-transform: uppercase;
+      }
+      ul{
+         display: flex;
+         justify-content: space-between;
+         width: 445px;
+
+         li{
+            @include ft('Inter', normal, 500, 16px, 19px, #1B1B20);
+            cursor: pointer;
+         }
+      }
+      button{
+         background: linear-gradient(180deg, #8B1CFB 0%, #B02CDF 100%);
+         border-radius: 30px;
+         box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
+         border: 1px solid #8B1CFB;
+         @include ft('Inter', normal, 700, 16px, 120%, $color-white);
+         text-transform: uppercase;
+         padding: 16px 32px;
+         cursor: pointer;
+         letter-spacing: 0.08em;
+      }
+      
+   }
+   .one{
+      background: right 0 no-repeat url('/images/spot.png');
+      // background-size:  843px 609px;
+      .wrapper-one{
+         display: flex;
+         justify-content: space-between;
+        
+         div{
+            width: 743px;
+            margin-bottom: 256px;
+            h1{
+               @include ft('Fredoka', normal, 500, 64px, 120%, #252525);
+               margin: 110px 0px 36px 0px;
+            }
+            p{
+               @include ft('Inter', normal, 400, 24px, 120%, #626262);
+               margin-bottom: 60px;
+            }
+            .btn{
+               margin-bottom: 12px;
+               .btn-left{
+                  width: 224px;
+                  height: 66px;
+               }
+               .btn-right{
+                  width: 224px;
+                  height: 66px;
+               }
+            }
+         }
+         .fitcoin{
+            width: 426px;
+            height: 504px;
+            margin-right: 67px;
+            margin-top: 101px;
+         }
+      }
+      
+   }
+     
+
+}
+   
