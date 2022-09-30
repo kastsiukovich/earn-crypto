@@ -58,19 +58,22 @@ table {
   margin: 0 auto;
 }
 
-body {
+.center1 {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   font-family: 'Fredoka', sans-serif;
   font-family: 'Inter', sans-serif;
   font-family: 'Montserrat', sans-serif;
 }
 
-body .wrapper {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-body header {
+.wrapper header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,7 +87,7 @@ body header {
   background-color: #FFFFFF;
 }
 
-body header h1 {
+.wrapper header h1 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
@@ -96,7 +99,7 @@ body header h1 {
   text-transform: uppercase;
 }
 
-body header ul {
+.wrapper header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,7 +109,7 @@ body header ul {
   width: 445px;
 }
 
-body header ul li {
+.wrapper header ul li {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -116,7 +119,7 @@ body header ul li {
   cursor: pointer;
 }
 
-body header button {
+.wrapper header button {
   background: -webkit-gradient(linear, left top, left bottom, from(#8B1CFB), to(#B02CDF));
   background: linear-gradient(180deg, #8B1CFB 0%, #B02CDF 100%);
   border-radius: 30px;
@@ -135,11 +138,11 @@ body header button {
   letter-spacing: 0.08em;
 }
 
-body .one {
-  background: right 0 no-repeat url("/images/spot.png");
+.wrapper .one {
+  background: no-repeat url("/images/yoga-girl-1.png") 1128px 40px;
 }
 
-body .one .wrapper-one {
+.wrapper .one .wrapper-one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,12 +151,12 @@ body .one .wrapper-one {
           justify-content: space-between;
 }
 
-body .one .wrapper-one div {
+.wrapper .one .wrapper-one div {
   width: 743px;
   margin-bottom: 256px;
 }
 
-body .one .wrapper-one div h1 {
+.wrapper .one .wrapper-one div h1 {
   font-family: "Fredoka";
   font-style: normal;
   font-weight: 500;
@@ -163,7 +166,7 @@ body .one .wrapper-one div h1 {
   margin: 110px 0px 36px 0px;
 }
 
-body .one .wrapper-one div p {
+.wrapper .one .wrapper-one div p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -173,24 +176,195 @@ body .one .wrapper-one div p {
   margin-bottom: 60px;
 }
 
-body .one .wrapper-one div .btn {
+.wrapper .one .wrapper-one div .btn {
   margin-bottom: 12px;
 }
 
-body .one .wrapper-one div .btn .btn-left {
+.wrapper .one .wrapper-one div .btn .btn-left {
+  width: 224px;
+  height: 66px;
+  margin-right: 23px;
+}
+
+.wrapper .one .wrapper-one div .btn .btn-right {
   width: 224px;
   height: 66px;
 }
 
-body .one .wrapper-one div .btn .btn-right {
-  width: 224px;
-  height: 66px;
-}
-
-body .one .wrapper-one .fitcoin {
+.wrapper .one .wrapper-one .fitcoin {
   width: 426px;
   height: 504px;
   margin-right: 67px;
   margin-top: 101px;
+}
+
+.wrapper .two {
+  background: linear-gradient(94.9deg, #FFF5DD 1.6%, rgba(170, 86, 254, 0.32) 38.13%, rgba(254, 86, 217, 0.28) 58.65%, rgba(86, 254, 254, 0.28) 99.73%);
+}
+
+.wrapper .two .two-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .two .two-cards div {
+  text-align: center;
+  margin: 100px 0;
+}
+
+.wrapper .two .two-cards div img {
+  margin-bottom: 24px;
+}
+
+.wrapper .two .two-cards div h3 {
+  margin-bottom: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: #000000;
+  width: 326px;
+}
+
+.wrapper .two .two-cards div p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #1B1B20;
+  width: 325px;
+}
+
+.wrapper .three {
+  background: url("/images/background.png");
+}
+
+.wrapper .three .three-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.wrapper .three .three-wrapper img {
+  margin: 28px 0px 8px 0px;
+}
+
+.wrapper .three .three-wrapper h5 {
+  margin: 48px 0 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #1B1B20;
+}
+
+.wrapper .three .three-wrapper h2 {
+  text-transform: uppercase;
+  margin-bottom: 36px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  color: #1B1B20;
+  width: 592px;
+}
+
+.wrapper .three .three-wrapper h2 span {
+  color: #D61FDA;
+}
+
+.wrapper .three .three-wrapper p {
+  width: 743px;
+  margin-bottom: 125px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #626262;
+}
+
+.wrapper .four {
+  background: url("/images/yoga-girl.png") no-repeat 0px 24px;
+}
+
+.wrapper .four .four-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: center;
+}
+
+.wrapper .four .four-wrapper .wid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 900px;
+  -ms-flex-item-align: end;
+      align-self: end;
+  text-align: center;
+  margin: 192px 0 322px;
+}
+
+.wrapper .four .four-wrapper .wid h3 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  color: #1B1B20;
+  width: 669px;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+}
+
+.wrapper .four .four-wrapper .wid h3 span {
+  color: #D61FDA;
+}
+
+.wrapper .four .four-wrapper .wid p {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #626262;
+  width: 900px;
 }
 /*# sourceMappingURL=style.css.map */

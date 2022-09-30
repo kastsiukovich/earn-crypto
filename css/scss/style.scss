@@ -11,25 +11,33 @@
    // linear-gradient(#14125F 100%, #1E1C75 21%)
 }
 $color-white: #FFFFFF;
+$color-black: #000000;
+$color-1b: #1B1B20;
+$color-grey: #626262;
+$color-pink: #D61FDA;
 .center{
    max-width: 1515px;
    width: 100%;
    margin: 0 auto;
 }
+.center1{
+   max-width: 1200px;
+   width: 100%;
+   margin: 0 auto;
+}
 
-body{
-   .wrapper{
-      width: 100%;
-      max-width: 1920px;
-      margin: 0 auto;
-   }
+
+.wrapper{
+   width: 100%;
+   max-width: 1920px;
+   margin: 0 auto;
    font-family: 'Fredoka', sans-serif;
    font-family: 'Inter', sans-serif;
    font-family: 'Montserrat', sans-serif;
    header{
       display: flex;
       justify-content: space-between;
-      align-items: center;
+       align-items: center;
       height: 115px;
       background-color: $color-white;
       h1{
@@ -44,7 +52,7 @@ body{
          width: 445px;
 
          li{
-            @include ft('Inter', normal, 500, 16px, 19px, #1B1B20);
+            @include ft('Inter', normal, 500, 16px, 19px, $color-1b);
             cursor: pointer;
          }
       }
@@ -59,15 +67,14 @@ body{
          cursor: pointer;
          letter-spacing: 0.08em;
       }
-      
+     
    }
    .one{
-      background: right 0 no-repeat url('/images/spot.png');
-      // background-size:  843px 609px;
+      background: no-repeat url('/images/yoga-girl-1.png') 1128px 40px;
       .wrapper-one{
          display: flex;
          justify-content: space-between;
-        
+       
          div{
             width: 743px;
             margin-bottom: 256px;
@@ -84,6 +91,7 @@ body{
                .btn-left{
                   width: 224px;
                   height: 66px;
+                  margin-right: 23px;
                }
                .btn-right{
                   width: 224px;
@@ -100,7 +108,100 @@ body{
       }
       
    }
-     
+   .two{
+      background: linear-gradient(94.9deg, #FFF5DD 1.6%, rgba(170, 86, 254, 0.32) 38.13%, rgba(254, 86, 217, 0.28) 58.65%, rgba(86, 254, 254, 0.28) 99.73%);
+      .two-cards{
+            display: flex;
+            justify-content: space-between;
 
+         div{
+            text-align: center;
+            margin: 100px 0;
+            img{
+               margin-bottom: 24px;
+            }
+            h3{
+               margin-bottom: 24px;
+               @include ft('Inter', normal, 700, 32px, 120%, $color-black);
+               width: 326px;
+
+            }
+            p{
+               @include ft('Inter', normal, 400, 24px, 120%, $color-1b);
+               width: 325px;
+            }
+         }
+      }
+   }
+   .three{
+      background: url('/images/background.png');
+      
+      .three-wrapper{
+
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+         img{
+            margin: 28px 0px 8px 0px;
+         }
+         h5{
+            margin: 48px 0 20px;
+            @include ft('Inter', normal, 400, 20px, 120%, $color-1b)
+         }
+         h2{
+            text-transform: uppercase;
+            margin-bottom: 36px;
+            @include ft('Inter', normal, 700, 56px, 120%, $color-1b);
+            width: 592px;
+            span{
+               color: $color-pink;
+            }
+         }
+         p{
+            width: 743px;
+            margin-bottom: 125px;
+            @include ft('Inter', normal, 400, 24px, 120%, $color-grey)
+         }
+      }
+   }
+   .four{
+      background: url('/images/yoga-girl.png') no-repeat 0px 24px;
+      .four-wrapper{
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-end;
+         text-align: center;
+         // width: 900px;
+         .wid{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 900px;
+            align-self: end;
+            text-align: center;
+            margin: 192px 0 322px;
+            h3{
+               align-self: center;
+               @include ft('Inter', normal, 700, 56px, 120%, $color-1b);
+               span{
+                  color: $color-pink;
+               }
+               width: 669px;
+               text-transform: uppercase;
+               margin-bottom: 36px;
+            }
+            p{
+               align-self: end;
+               @include ft('Inter', normal, 400, 24px, 120%, $color-grey);
+               width: 900px;
+            }
+         }
+        
+      }
+   }
 }
+
+
+
    
