@@ -64,6 +64,18 @@ table {
   margin: 0 auto;
 }
 
+.center2 {
+  max-width: 1654px;
+  width: 100;
+  margin: 0 auto;
+}
+
+.center3 {
+  max-width: 1430px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .wrapper {
   width: 100%;
   max-width: 1920px;
@@ -366,5 +378,162 @@ table {
   line-height: 120%;
   color: #626262;
   width: 900px;
+}
+
+.wrapper .five {
+  background-image: url("/images/rectangle.png");
+  background-size: 1805px 650px;
+  background-position: -73px -61px;
+  margin-bottom: 38px;
+  border-radius: 20px;
+}
+
+.wrapper .five .five-wrapper .earn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 60px 0px 48px;
+  text-align: center;
+}
+
+.wrapper .five .five-wrapper .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+.wrapper .five .five-wrapper .cards .card {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: #000000;
+  width: 400px;
+}
+
+.wrapper .five .five-wrapper .cards .card h4 {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.wrapper .five .five-wrapper .cards .card ul {
+  font-weight: 400px;
+  font-size: 16px;
+  color: #1B1B20;
+  list-style-type: disc;
+}
+
+.wrapper .five .five-wrapper .cards .card ul li {
+  margin-left: 15px;
+  margin-bottom: 8px;
+}
+
+.wrapper .five .five-wrapper .cards .card ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.wrapper .six-bg {
+  margin: 0px 48px;
+  background: url("/images/background-1.png") no-repeat;
+  background-size: 1824px 862px;
+  background-position: 0px 0px;
+}
+
+.wrapper .six-bg .six {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: 0px 491px url("/images/mirrors.png") no-repeat;
+  background-size: contain;
+}
+
+.wrapper .six-bg .six h3 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  color: #1B1B20;
+  width: 900px;
+  margin: 148px 0px 80px;
+}
+
+.wrapper .six-bg .six h3 span {
+  color: #D61FDA;
+}
+
+.wrapper .six-bg .six .fit-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .six-bg .six .fit-wrapper .fit-mirror {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  color: #2D2D2D;
+  margin-bottom: 926px;
+}
+
+.wrapper .six-bg .six .fit-wrapper .fit-mirror h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #1B1B20;
+  text-transform: uppercase;
+}
+
+.wrapper .six-bg .six .fit-wrapper .fit-mirror h4 span {
+  color: #D61FDA;
+}
+
+.wrapper .six-bg .six .fit-wrapper .fit-mirror h5 {
+  margin: 24px 0px;
+}
+
+.wrapper .six-bg .six .fit-wrapper .fit-mirror p {
+  width: 270px;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

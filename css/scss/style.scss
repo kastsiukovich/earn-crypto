@@ -15,6 +15,7 @@ $color-black: #000000;
 $color-1b: #1B1B20;
 $color-grey: #626262;
 $color-pink: #D61FDA;
+$color-2d: #2D2D2D;
 .center{
    max-width: 1515px;
    width: 100%;
@@ -22,6 +23,17 @@ $color-pink: #D61FDA;
 }
 .center1{
    max-width: 1200px;
+   width: 100%;
+   margin: 0 auto;
+}
+.center2{
+   max-width: 1654px;
+   width: 100;
+   margin: 0 auto;
+   // height: 410px;
+}
+.center3{
+   max-width: 1430px;
    width: 100%;
    margin: 0 auto;
 }
@@ -200,8 +212,100 @@ $color-pink: #D61FDA;
         
       }
    }
-}
+   .five{
+      background-image: url('/images/rectangle.png');
+      background-size: 1805px 650px;
+      background-position: -73px -61px;
+      margin-bottom: 38px;
+      border-radius: 20px;
+      .five-wrapper{
+         .earn{
+            @include ft('Inter', normal, 700, 56px, 120%, $color-black);
+            text-transform: uppercase;
+            padding: 60px 0px 48px;
+            text-align: center;
+         }
+         .cards{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 60px;
+            .card{
+               @include ft('Inter', normal, 700, 32px, 120%, $color-black);
+               width: 400px;
 
+               h4{
+                  text-transform: capitalize;
+                  text-align: center;
+                  margin-bottom: 24px;
+               }
+               ul{
+                  font-weight: 400px;
+                  font-size: 16px;
+                  color: $color-1b;
+                  list-style-type: disc;
+                     li{
+                        margin-left: 15px;
+                        margin-bottom: 8px;
+                     }
+                     li:last-child{
+                        margin-bottom: 0px;
+                     }
+               }
+            }
+         }
+      }
+   }
+   .six-bg{
+      margin: 0px 48px;
+      background: url('/images/background-1.png') no-repeat;
+      background-size: 1824px 862px;
+      background-position: 0px 0px;
 
-
+      .six{
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         background: 0px 491px url('/images/mirrors.png') no-repeat;
+         background-size: contain;
+         h3{
+            align-self: center;
+            text-align: center;
+            @include ft('Inter', normal, 700, 56px, 120%, $color-1b);
+            width: 900px;
+            margin: 148px 0px 80px;
+         }
+         h3 span{
+            color: $color-pink
+         }
+         .fit-wrapper{
+            display: flex;
+            justify-content: space-between;
+            .fit-mirror{ 
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               @include ft('Inter', normal, 700, 28px, 120%, $color-2d);
+               margin-bottom: 926px;
+               h4{
+                  @include ft('Inter', normal, 700, 48px, 120%, $color-1b);
+                  text-transform: uppercase;
+               }
+               h4 span{
+                  color: $color-pink;
+               }
+               h5{
+               
+                  margin: 24px 0px;
+               }
+               p{
+                  width: 270px;
+                  font-weight: 400;
+                  font-size: 24px;
+                  text-align: center;
+               }
+            }
+         }
+      }
+   }
    
+}
