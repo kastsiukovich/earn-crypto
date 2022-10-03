@@ -490,6 +490,7 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 12px;
 }
 
 .wrapper .six-bg .six .fit-wrapper .fit-mirror {
@@ -535,5 +536,132 @@ table {
   font-weight: 400;
   font-size: 24px;
   text-align: center;
+}
+
+.wrapper .seven-bg {
+  background: 1920px 1085px url("/images/background-2.png"), 1126px 327px url("/images/coins-1.png") no-repeat;
+}
+
+.wrapper .seven-bg .seven h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  color: #1B1B20;
+  padding: 191px 0px 120px;
+  text-align: center;
+}
+
+.wrapper .seven-bg .seven h2 span {
+  color: #D61FDA;
+}
+
+.wrapper .seven-bg .seven .seven-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 0px 246px 69px;
+  background: 69px 0px url("/images/rectangle-7.png") no-repeat;
+  background-size: 638px 554px;
+}
+
+.wrapper .seven-bg .seven .seven-content .left {
+  padding: 60px 4px 60px 60px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.wrapper .seven-bg .seven .seven-content .left li:not(:first-child) {
+  font-weight: 400px;
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.wrapper .seven-bg .seven .seven-content .left li:first-child {
+  margin-bottom: 12px;
+}
+
+.wrapper .seven-bg .seven .seven-content .right {
+  text-align: right;
+  padding: 60px 60px 60px 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.wrapper .seven-bg .seven .seven-content .right li:not(:first-child) {
+  font-weight: 400px;
+  font-size: 24px;
+  color: #626262;
+  margin-bottom: 4px;
+}
+
+.wrapper .seven-bg .seven .seven-content .right li:first-child {
+  margin-bottom: 12px;
+}
+
+.wrapper footer {
+  height: 639px;
+  background: 149px -209px url("/images/footer-girl.png") no-repeat, 0px -560px url("/images/background-footer.png");
+}
+
+.wrapper footer .footer-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  padding: 262px 0px 0px 0px;
+  text-align: right;
+}
+
+.wrapper footer .footer-cont h3 {
+  text-align: right;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-bottom: 54px;
+}
+
+.wrapper footer .footer-cont h5 {
+  -ms-flex-item-align: right;
+      -ms-grid-row-align: right;
+      align-self: right;
+  text-align: right;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+  width: 883px;
+}
+
+.wrapper footer .footer-cont p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #FFFFFF;
+  padding: 40px 0px 88px 0px;
+  width: 529px;
 }
 /*# sourceMappingURL=style.css.map */

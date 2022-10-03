@@ -260,7 +260,6 @@ $color-2d: #2D2D2D;
       background: url('/images/background-1.png') no-repeat;
       background-size: 1824px 862px;
       background-position: 0px 0px;
-
       .six{
          display: flex;
          justify-content: center;
@@ -280,6 +279,7 @@ $color-2d: #2D2D2D;
          .fit-wrapper{
             display: flex;
             justify-content: space-between;
+            margin-bottom: 12px;
             .fit-mirror{ 
                display: flex;
                flex-direction: column;
@@ -307,5 +307,85 @@ $color-2d: #2D2D2D;
          }
       }
    }
-   
+   .seven-bg{
+      background: 1920px 1085px url('/images/background-2.png'), 1126px 327px url('/images/coins-1.png') no-repeat;
+      .seven{
+         h2{
+            @include ft('Inter', normal, 700, 56px, 120%, $color-1b);
+            padding: 191px 0px 120px;
+            text-align: center;
+            span{
+               color: $color-pink;
+            }
+         }
+         .seven-content{
+            display: flex;
+            padding: 0px 0px 246px 69px;
+            background: 69px 0px url('/images/rectangle-7.png') no-repeat;
+            background-size: 638px 554px;
+            .left{
+               padding: 60px 4px 60px 60px;
+               @include ft('Inter', normal, 700, 32px, 120%, $color-black);
+               li:not(:first-child){
+                  font-weight: 400px;
+                  font-size: 24px;
+                  margin-bottom: 4px;
+               }
+               li:first-child{
+                  margin-bottom: 12px;
+               }
+            }
+            .right{
+               text-align: right;
+               padding: 60px 60px 60px 0px;
+               @include ft('Inter', normal, 700, 32px, 120%, $color-black);
+               li:not(:first-child){
+                  font-weight: 400px;
+                  font-size: 24px;
+                  color: $color-grey;
+                  margin-bottom: 4px;
+               }
+               li:first-child{
+                  margin-bottom: 12px;
+               }
+            }
+         }
+      }
+   }
+   footer{
+      height: 639px;
+      background: 149px -209px url('/images/footer-girl.png') no-repeat , 0px -560px url('/images/background-footer.png');
+      .footer-cont{
+         display: flex;
+         flex-direction: column;
+         justify-content: right;
+         padding: 262px 0px 0px 0px;
+         text-align: right;
+         h3{
+            text-align: right;
+            @include ft('Inter', normal, 700, 56px, 120%, $color-white);
+            margin-bottom: 54px;
+         }
+         h5{
+            align-self: right;
+            text-align: right;
+            @include ft('Inter', normal, 400, 28px, 120%, $color-white);
+            margin-bottom: 40px;
+            width: 883px;
+         }
+         form{
+            label{
+
+            }
+            button{
+
+            }
+         }
+         p{
+            @include ft('Inter', normal, 400, 24px, 120%, $color-white);
+            padding: 40px 0px 88px 0px;
+            width: 529px;
+         }
+      }
+   }
 }
