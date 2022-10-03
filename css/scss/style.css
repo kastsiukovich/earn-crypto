@@ -640,10 +640,10 @@ table {
 }
 
 .wrapper footer .footer-cont h5 {
-  -ms-flex-item-align: right;
-      -ms-grid-row-align: right;
-      align-self: right;
-  text-align: right;
+  -ms-flex-item-align: self-end;
+      -ms-grid-row-align: self-end;
+      align-self: self-end;
+  display: inline;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -655,6 +655,10 @@ table {
 }
 
 .wrapper footer .footer-cont p {
+  display: inline;
+  -ms-flex-item-align: self-end;
+      -ms-grid-row-align: self-end;
+      align-self: self-end;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;

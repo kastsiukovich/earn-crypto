@@ -367,8 +367,8 @@ $color-2d: #2D2D2D;
             margin-bottom: 54px;
          }
          h5{
-            align-self: right;
-            text-align: right;
+            align-self: self-end;
+            display:inline;
             @include ft('Inter', normal, 400, 28px, 120%, $color-white);
             margin-bottom: 40px;
             width: 883px;
@@ -382,6 +382,8 @@ $color-2d: #2D2D2D;
             }
          }
          p{
+            display: inline;
+            align-self: self-end;
             @include ft('Inter', normal, 400, 24px, 120%, $color-white);
             padding: 40px 0px 88px 0px;
             width: 529px;
