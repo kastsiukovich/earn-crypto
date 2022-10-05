@@ -109,6 +109,14 @@ table {
   cursor: pointer;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.wrapper header h1:hover {
+  color: #D61FDA;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .wrapper header ul {
@@ -129,6 +137,14 @@ table {
   line-height: 19px;
   color: #1B1B20;
   cursor: pointer;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.wrapper header ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #D61FDA;
 }
 
 .wrapper header button {
@@ -148,6 +164,17 @@ table {
   padding: 16px 32px;
   cursor: pointer;
   letter-spacing: 0.08em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.wrapper header button:hover {
+  color: #D61FDA;
+  background: #FFFFFF;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .wrapper .one {
@@ -196,11 +223,27 @@ table {
   width: 224px;
   height: 66px;
   margin-right: 23px;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  cursor: pointer;
+}
+
+.wrapper .one .wrapper-one div .btn .btn-left:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .wrapper .one .wrapper-one div .btn .btn-right {
   width: 224px;
   height: 66px;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  cursor: pointer;
+}
+
+.wrapper .one .wrapper-one div .btn .btn-right:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .wrapper .one .wrapper-one .fitcoin {
@@ -226,6 +269,14 @@ table {
 .wrapper .two .two-cards div {
   text-align: center;
   margin: 100px 0;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.wrapper .two .two-cards div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .wrapper .two .two-cards div img {
@@ -241,6 +292,12 @@ table {
   line-height: 120%;
   color: #000000;
   width: 326px;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.wrapper .two .two-cards div h3:hover {
+  color: #D61FDA;
 }
 
 .wrapper .two .two-cards div p {
@@ -251,6 +308,12 @@ table {
   line-height: 120%;
   color: #1B1B20;
   width: 325px;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.wrapper .two .two-cards div p:hover {
+  color: #D61FDA;
 }
 
 .wrapper .three {
@@ -511,6 +574,14 @@ table {
   line-height: 120%;
   color: #2D2D2D;
   margin-bottom: 926px;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  cursor: pointer;
+}
+
+.wrapper .six-bg .six .fit-wrapper .fit-mirror:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .wrapper .six-bg .six .fit-wrapper .fit-mirror h4 {
@@ -580,6 +651,15 @@ table {
   font-weight: 400px;
   font-size: 24px;
   margin-bottom: 4px;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.wrapper .seven-bg .seven .seven-content .left li:not(:first-child):hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #D61FDA;
 }
 
 .wrapper .seven-bg .seven .seven-content .left li:first-child {
@@ -602,6 +682,15 @@ table {
   font-size: 24px;
   color: #626262;
   margin-bottom: 4px;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.wrapper .seven-bg .seven .seven-content .right li:not(:first-child):hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #D61FDA;
 }
 
 .wrapper .seven-bg .seven .seven-content .right li:first-child {
@@ -609,8 +698,8 @@ table {
 }
 
 .wrapper footer {
-  height: 639px;
-  background: 149px -209px url("/images/footer-girl.png") no-repeat, 0px -560px url("/images/background-footer.png");
+  height: 739px;
+  background: 149px -106px url("/images/footer-girl.png") no-repeat, 0px -460px url("/images/background-footer.png");
 }
 
 .wrapper footer .footer-cont {
@@ -652,6 +741,47 @@ table {
   color: #FFFFFF;
   margin-bottom: 40px;
   width: 883px;
+}
+
+.wrapper footer .footer-cont form label input {
+  width: 337px;
+  height: 51px;
+  border: 1px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+  padding: 16px 196px 16px 20px;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.wrapper footer .footer-cont form button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8B1CFB), to(#B02CDF));
+  background: linear-gradient(180deg, #8B1CFB 0%, #B02CDF 100%);
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid #8B1CFB;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  cursor: pointer;
+  letter-spacing: 0.08em;
+  margin-left: 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.wrapper footer .footer-cont form button:hover {
+  color: #D61FDA;
+  background: #FFFFFF;
 }
 
 .wrapper footer .footer-cont p {

@@ -57,6 +57,11 @@ $color-2d: #2D2D2D;
          cursor: pointer;
          letter-spacing: 0.08em;
          text-transform: uppercase;
+         transition: 0.5s ease-out;
+         &:hover{
+            color: $color-pink;
+            transform: scale(1.1);
+         }
       }
       ul{
          display: flex;
@@ -66,6 +71,11 @@ $color-2d: #2D2D2D;
          li{
             @include ft('Inter', normal, 500, 16px, 19px, $color-1b);
             cursor: pointer;
+            transition: 0.5s ease-out;
+            &:hover{
+               transform: scale(1.1);
+               color: $color-pink;
+            }
          }
       }
       button{
@@ -78,6 +88,13 @@ $color-2d: #2D2D2D;
          padding: 16px 32px;
          cursor: pointer;
          letter-spacing: 0.08em;
+         box-sizing: border-box;
+         transition: 0.5s ease-out;
+         &:hover{
+            color: $color-pink;
+            background: $color-white;
+            transform: scale(1.1);
+         }
       }
      
    }
@@ -93,6 +110,8 @@ $color-2d: #2D2D2D;
             h1{
                @include ft('Fredoka', normal, 500, 64px, 120%, #252525);
                margin: 110px 0px 36px 0px;
+               
+               
             }
             p{
                @include ft('Inter', normal, 400, 24px, 120%, #626262);
@@ -104,10 +123,20 @@ $color-2d: #2D2D2D;
                   width: 224px;
                   height: 66px;
                   margin-right: 23px;
+                  transition: 0.5s ease-out;
+                  cursor: pointer;
+                  &:hover{
+                     transform: scale(1.1);
+                  }
                }
                .btn-right{
                   width: 224px;
                   height: 66px;
+                  transition: 0.5s ease-out;
+                  cursor: pointer;
+                  &:hover{
+                     transform: scale(1.1);
+                  }
                }
             }
          }
@@ -129,6 +158,12 @@ $color-2d: #2D2D2D;
          div{
             text-align: center;
             margin: 100px 0;
+            cursor: pointer;
+            transition: 0.5s ease-out;
+            &:hover{
+               transform: scale(1.1);
+               
+            }
             img{
                margin-bottom: 24px;
             }
@@ -136,12 +171,20 @@ $color-2d: #2D2D2D;
                margin-bottom: 24px;
                @include ft('Inter', normal, 700, 32px, 120%, $color-black);
                width: 326px;
-
+               transition: 0.5s ease-out;
+               &:hover{
+                  color: $color-pink;
+               }
             }
             p{
                @include ft('Inter', normal, 400, 24px, 120%, $color-1b);
                width: 325px;
+               transition: 0.5s ease-out;
+               &:hover{
+                  color: $color-pink;
+               }
             }
+           
          }
       }
    }
@@ -286,6 +329,11 @@ $color-2d: #2D2D2D;
                align-items: center;
                @include ft('Inter', normal, 700, 28px, 120%, $color-2d);
                margin-bottom: 926px;
+               transition: 0.5s ease-out;
+               cursor: pointer;
+               &:hover{
+                  transform: scale(1.1);
+               }
                h4{
                   @include ft('Inter', normal, 700, 48px, 120%, $color-1b);
                   text-transform: uppercase;
@@ -326,10 +374,17 @@ $color-2d: #2D2D2D;
             .left{
                padding: 60px 4px 60px 60px;
                @include ft('Inter', normal, 700, 32px, 120%, $color-black);
+               
                li:not(:first-child){
                   font-weight: 400px;
                   font-size: 24px;
                   margin-bottom: 4px;
+                  cursor: pointer;
+                  transition: 0.5s ease-out;
+                  &:hover{
+                     transform: scale(1.1);
+                     color: $color-pink;
+                  }
                }
                li:first-child{
                   margin-bottom: 12px;
@@ -339,22 +394,31 @@ $color-2d: #2D2D2D;
                text-align: right;
                padding: 60px 60px 60px 0px;
                @include ft('Inter', normal, 700, 32px, 120%, $color-black);
+               
+              
                li:not(:first-child){
                   font-weight: 400px;
                   font-size: 24px;
                   color: $color-grey;
                   margin-bottom: 4px;
+                  cursor: pointer;
+                  transition: 0.5s ease-out;
+                  &:hover{
+                     transform: scale(1.1);
+                     color: $color-pink;
+                  }
                }
                li:first-child{
                   margin-bottom: 12px;
                }
+              
             }
          }
       }
    }
    footer{
-      height: 639px;
-      background: 149px -209px url('/images/footer-girl.png') no-repeat , 0px -560px url('/images/background-footer.png');
+      height: 739px;
+      background: 149px -106px url('/images/footer-girl.png') no-repeat , 0px -460px url('/images/background-footer.png');
       .footer-cont{
          display: flex;
          flex-direction: column;
@@ -375,11 +439,38 @@ $color-2d: #2D2D2D;
          }
          form{
             label{
-
+              
+               
+               input{
+                  width: 337px;
+                  height: 51px;
+                  border: 1px solid $color-white;
+                  box-sizing: border-box;
+                  border-radius: 30px;
+                  padding: 16px 196px 16px 20px;
+                  letter-spacing: 0.08em;
+                  color: rgba(255, 255, 255, 0.85)
+               }
             }
             button{
-
+               background: linear-gradient(180deg, #8B1CFB 0%, #B02CDF 100%);
+               border-radius: 30px;
+               box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
+               border: 1px solid #8B1CFB;
+               @include ft('Inter', normal, 700, 16px, 120%, $color-white);
+               text-transform: uppercase;
+               padding: 16px 32px;
+               cursor: pointer;
+               letter-spacing: 0.08em;
+               margin-left: 32px;
+               box-sizing: border-box;
+               transition: 0.5s ease-out;
+               &:hover{
+                  color: $color-pink;
+                  background: $color-white;
+               }
             }
+            
          }
          p{
             display: inline;
