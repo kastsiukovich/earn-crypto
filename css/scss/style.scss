@@ -96,7 +96,7 @@ $color-2d: #2D2D2D;
             transform: scale(1.1);
          }
       }
-     
+      
    }
    .one{
       background: no-repeat url('/images/yoga-girl-1.png') 1128px 40px;
@@ -439,17 +439,15 @@ $color-2d: #2D2D2D;
          }
          form{
             label{
-              
-               
                input{
                   width: 337px;
                   height: 51px;
                   border: 1px solid $color-white;
                   box-sizing: border-box;
                   border-radius: 30px;
-                  padding: 16px 196px 16px 20px;
+                  padding: 16px 16px 16px 20px;
                   letter-spacing: 0.08em;
-                  color: rgba(255, 255, 255, 0.85)
+                  // color: rgba(255, 255, 255, 0.85);
                }
             }
             button{
@@ -466,6 +464,7 @@ $color-2d: #2D2D2D;
                box-sizing: border-box;
                transition: 0.5s ease-out;
                &:hover{
+                  transform: scale(1.1);
                   color: $color-pink;
                   background: $color-white;
                }
@@ -481,4 +480,181 @@ $color-2d: #2D2D2D;
          }
       }
    }
+   @media screen and (max-width: 1850px) {
+      .one{
+        background-position: right 40px;
+      }
+   }
+   @media screen and (max-width: 1600px) {
+      .center{
+         max-width: 100%;
+         width: 95%;
+         margin: 0 auto;
+      }
+   }
+   @media screen and(max-width: 1450px) {
+      .center1{
+         max-width: 100%;
+         width: 95%;
+      }
+      .one{
+         .wrapper-one{
+            div{
+               p{
+                  color: $color-black;
+               }
+            }
+           
+         }
+      }
+      .four{
+         .four-wrapper{
+            .wid{
+               p{
+                  color: $color-pink;
+               }
+            }
+         }
+      }
+   }
+   @media screen and(max-width: 1100px) {
+      .four{
+         .four-wrapper{
+            .wid{
+               h3{
+                  color: $color-pink;
+               }
+            }
+         }
+      }
+      
+   }
+   @media screen and(max-width: 1050px) {
+      .two{
+         .two-cards{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            div{
+               margin: 50px 0;
+               h3{
+                  width: auto;
+               }
+               p{
+                  width: auto;
+               }
+            }
+         }
+      }
+      
+   }
+   @media screen and (max-width: 1000px) {
+      header{
+         ul{
+            justify-content: space-around;
+            width: 340px;
+         }
+      }
+   }
+   @media screen and (max-width: 800px) {
+      header{
+         justify-content: space-around;
+         ul{
+            display: none;
+         }
+      }
+      .one{
+         background-position: center;
+         .wrapper-one{
+            div{
+               width: auto;
+            }
+           
+         }
+      }
+      .three{
+         .three-wrapper{
+            
+            img{
+               width: 95%;
+            }
+            h2{
+               width: 95%;
+            }
+            p{
+               width: 95%;
+            }
+         }
+         
+      }
+      
+   }
+   @media screen and (max-width: 650px) {
+      header{
+         flex-direction: column;
+         justify-content: space-evenly;
+         height: 200px;
+      }
+      .one{
+         .wrapper-one{
+            text-align: center;
+            div{
+               margin-bottom: 100px;
+               h1{
+                  font-size: 40px;
+                  margin-top: 60px;
+               }
+               p{
+                  margin-bottom: 30px;
+                  font-size: 16px;
+               }
+               .btn{
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: space-evenly;
+                  height: 250px;
+               }
+            }
+           
+         }
+      }
+      .two{
+         .two-cards{
+           
+            div{
+               
+               h3{
+                  font-size: 20px;
+               }
+               p{
+                  font-size: 16px;
+               }
+            }
+         }
+      }
+      .three{
+         .three-wrapper{
+            h2{
+               font-size: 40px;
+            }
+            p{
+               font-size: 20px;
+               margin-bottom: 60px;
+            }
+         }
+      }
+      .four{
+         background-position: center;
+      }
+   }
+   @media screen and (max-width: 450px) {
+      header{
+         button{
+            width: 100%;
+         }
+      }
+   }
+
+
 }
