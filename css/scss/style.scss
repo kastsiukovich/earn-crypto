@@ -120,6 +120,8 @@ $color-2d: #2D2D2D;
             .btn{
                margin-bottom: 12px;
                .btn-left{
+                  background: rgba(219, 184, 255, 0);
+                  border: 0px;
                   width: 224px;
                   height: 66px;
                   margin-right: 23px;
@@ -130,6 +132,8 @@ $color-2d: #2D2D2D;
                   }
                }
                .btn-right{
+                  background: rgba(219, 184, 255, 0);
+                  border: 0px;
                   width: 224px;
                   height: 66px;
                   transition: 0.5s ease-out;
@@ -256,7 +260,7 @@ $color-2d: #2D2D2D;
       }
    }
    .five{
-      background-image: url('/images/rectangle.png');
+      background: url('/images/rectangle.png') no-repeat;
       background-size: 1805px 650px;
       background-position: -73px -61px;
       margin-bottom: 38px;
@@ -484,12 +488,21 @@ $color-2d: #2D2D2D;
       .one{
         background-position: right 40px;
       }
+      .seven-bg{
+         background: right 327px url("/images/coins-1.png") no-repeat;
+      }
    }
    @media screen and (max-width: 1600px) {
       .center{
          max-width: 100%;
          width: 95%;
          margin: 0 auto;
+      }
+      .center2{
+         width: 95%;
+      }
+      .center3{
+         width: 95%;
       }
    }
    @media screen and(max-width: 1450px) {
@@ -516,18 +529,69 @@ $color-2d: #2D2D2D;
             }
          }
       }
-   }
-   @media screen and(max-width: 1100px) {
-      .four{
-         .four-wrapper{
-            .wid{
-               h3{
-                  color: $color-pink;
+      .five{
+         .five-wrapper{
+            .cards{
+               .card{
+                  width: auto;
                }
             }
          }
       }
-      
+      .six-bg{
+         .six{
+            .fit-wrapper{
+               .fit-mirror{
+                  margin-bottom: 743px;
+               }
+            }
+          
+          
+         }
+      }
+   }
+   @media screen and (max-width: 1350px){
+      .seven-bg{
+         .seven{
+            .seven-content{
+               .right{
+                  li:not(:first-child){
+                     color: $color-black;
+                  }
+               }
+               
+            }
+         }
+      }
+   }
+   @media screen and(max-width: 1200px) {
+      .four{
+         .four-wrapper{
+            .wid{
+               width: 95%;
+               align-self: center;
+               margin-bottom: 190px;
+               h3{
+                  color: $color-pink;
+                  width: 95%;
+               }
+               p{
+                  width: 95%;
+               }
+            }
+         }
+      }
+      .six-bg{
+         .six{
+            .fit-wrapper{
+               .fit-mirror{
+                  margin-bottom: 592px;
+               }
+            }
+          
+          
+         }
+      }
    }
    @media screen and(max-width: 1050px) {
       .two{
@@ -537,22 +601,58 @@ $color-2d: #2D2D2D;
             flex-wrap: wrap;
             div{
                margin: 50px 0;
-               h3{
-                  width: auto;
-               }
-               p{
-                  width: auto;
-               }
+              
             }
          }
       }
-      
+      .five{
+         background-size: 1805px 860px;
+         .five-wrapper{
+            .cards{
+               flex-wrap: wrap;
+               justify-content: space-evenly;
+               
+               }
+               .card{
+                  padding-bottom: 35px;
+              
+            }
+         }
+      }
+    
    }
    @media screen and (max-width: 1000px) {
       header{
          ul{
             justify-content: space-around;
             width: 340px;
+         }
+      }
+      .four{
+         .four-wrapper{
+            .wid{
+               margin-bottom: 150px;
+            }
+         }
+      }
+      .six-bg{
+         .six{
+            h3{
+               width: auto;
+            }
+            
+            .fit-wrapper{
+               .fit-mirror{
+                  margin-bottom: 424px;
+               }
+            }
+         }
+      }
+      footer{
+         .footer-cont{
+            h5{
+               width: auto;
+            }
          }
       }
    }
@@ -587,13 +687,55 @@ $color-2d: #2D2D2D;
          }
          
       }
-      
+      .four{
+         .four-wrapper{
+            .wid{
+               margin-bottom: 90px;
+               width: 95%;
+            }
+         }
+      }
+      .five{
+         background-size: 1805px 1060px;
+      }
+      .six-bg{
+         
+         .six{
+            background-position: 0px 900px;
+            .fit-wrapper{
+               margin-bottom: 436px;
+               flex-direction: column;
+               justify-content: center;
+               .fit-mirror{
+                  margin: 0px 0px 25px;
+               }
+            }
+         }
+      }
+      .seven-bg{
+         .seven{
+            h2{
+               font-size: 40px;
+               padding: 85px 0px 60px;
+            }
+            .seven-content{
+               justify-content: center;
+               padding: 0px 0px;
+               background: 0px 0px url(/images/rectangle-7.png) no-repeat;
+               background-size: 776px 550px;
+            }
+         }
+      }
+    
    }
    @media screen and (max-width: 650px) {
       header{
          flex-direction: column;
          justify-content: space-evenly;
          height: 200px;
+         button{
+            width: 100%;
+         }
       }
       .one{
          .wrapper-one{
@@ -614,6 +756,12 @@ $color-2d: #2D2D2D;
                   align-items: center;
                   justify-content: space-evenly;
                   height: 250px;
+                  .btn-left{
+                     margin: 0px auto;
+                  }
+                  .btn-right{
+                     margin: 0px auto;
+                  }
                }
             }
            
@@ -623,11 +771,12 @@ $color-2d: #2D2D2D;
          .two-cards{
            
             div{
-               
                h3{
+                  width: auto;
                   font-size: 20px;
                }
                p{
+                  width: auto;
                   font-size: 16px;
                }
             }
@@ -646,6 +795,132 @@ $color-2d: #2D2D2D;
       }
       .four{
          background-position: center;
+         .four-wrapper{
+            .wid{
+               margin-bottom: 150px;
+               h3{
+                  font-size: 40px;
+               }
+               p{
+                  font-size: 20px;
+               }
+            }
+         }
+      }
+      .five{
+         .five-wrapper{
+            .earn{
+               font-size: 40px;
+            }
+            .cards{
+               .card{
+                  h4{
+                     font-size: 20px;
+                  }
+               }
+            }
+         }
+      }
+      .six-bg{
+         margin: 0 auto;
+         .six{
+            background-position: 0px 630px;
+            h3{
+               font-size: 40px;
+               margin: 70px 0px 40px;
+            }
+            .fit-wrapper{
+               .fit-mirror{
+                  h4{
+                     font-size: 26px;
+                    
+                  }
+                  h5{
+                     font-size: 16px;
+                     margin: 20px 0px;
+                  }
+                  p{
+                     font-size: 16px;
+                  }
+               }
+            }
+         }
+      }
+      .seven-bg{
+         .seven{
+            h2{
+               font-size: 40px;
+               padding: 70px 0px 50px;
+            }
+            .seven-content{
+               .left{
+                  font-size: 24px;
+                  li:not(:first-child){
+                     font-size: 16px;
+                  }
+               }
+               .right{
+                  font-size: 24px;
+                  li:not(:first-child){
+                     font-size: 16px;
+                  }
+               }
+               
+            }
+         }
+      }
+      footer{
+         background: center -106px url(/images/footer-girl.png) no-repeat, 0px -460px url(/images/background-footer.png);
+         
+         .footer-cont{
+            h3{
+               font-size: 40px;
+               margin-bottom: 27px;
+            }
+            h5{
+               font-size: 16px;
+               margin: 20px 0px;
+            }
+
+            form{
+               display: flex;
+               flex-direction: column;
+               label{
+                  input{
+                     width: 100%;
+                  }
+               }
+               button{
+                  margin: 15px 0px 0px;
+               }
+            }
+            p{
+               font-size: 16px;
+               width: auto;
+               padding: 20px 0px;
+            }
+         }
+      }
+   }
+   @media screen and(max-width: 550px) {
+      .six-bg{
+         .six{
+            .fit-wrapper{
+               margin-bottom: 320px;
+            }
+         }
+      }
+      .seven-bg{
+         .seven{
+            .seven-content{
+               .left{
+                  padding: 30px 4px 30px 30px;
+               }
+               .right{
+                  padding: 30px 30px 30px 0px;
+               }
+            }
+         }
       }
    }
    @media screen and (max-width: 450px) {
@@ -654,7 +929,66 @@ $color-2d: #2D2D2D;
             width: 100%;
          }
       }
+      .four{
+         .four-wrapper{
+            .wid{
+               margin: 90px 0px 100px;
+            }
+         }
+      }
+      .five{
+         background-size: 1805px 1260px;
+      }
+      .six-bg{
+         margin: 0 auto;
+         .six{
+            background-position: 0px 680px;
+            .fit-wrapper{
+               margin-bottom: 280px;
+            }
+         }
+      }
+      .seven-bg{
+         .seven{
+            .seven-content{
+               .left{
+                  padding: 5px 4px 0px 5px;
+               }
+               .right{
+                  padding: 5px 5px 5px 0px;
+               }
+            }
+         }
+      }
    }
-
-
+   @media screen and (max-width: 450px){
+      .seven-bg{
+         .seven{
+            .seven-content{
+               .left{
+                  li:nth-child(4){
+                     height: 58px;
+                  }
+               }
+               .right{
+                  li:nth-child(4){
+                     height: 58px;
+                  }
+               }
+            }
+         }
+      }
+   }
+   @media screen and(max-width: 350px){
+      .six-bg{
+         .six{
+            h3{
+               font-size:38px;
+            }
+            .fit-wrapper{
+               margin-bottom: 208px;
+            }
+         }
+      }
+   }
 }

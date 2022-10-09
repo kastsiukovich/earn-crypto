@@ -220,6 +220,8 @@ table {
 }
 
 .wrapper .one .wrapper-one div .btn .btn-left {
+  background: rgba(219, 184, 255, 0);
+  border: 0px;
   width: 224px;
   height: 66px;
   margin-right: 23px;
@@ -234,6 +236,8 @@ table {
 }
 
 .wrapper .one .wrapper-one div .btn .btn-right {
+  background: rgba(219, 184, 255, 0);
+  border: 0px;
   width: 224px;
   height: 66px;
   -webkit-transition: 0.5s ease-out;
@@ -444,7 +448,7 @@ table {
 }
 
 .wrapper .five {
-  background-image: url("/images/rectangle.png");
+  background: url("/images/rectangle.png") no-repeat;
   background-size: 1805px 650px;
   background-position: -73px -61px;
   margin-bottom: 38px;
@@ -804,6 +808,9 @@ table {
   .wrapper .one {
     background-position: right 40px;
   }
+  .wrapper .seven-bg {
+    background: right 327px url("/images/coins-1.png") no-repeat;
+  }
 }
 
 @media screen and (max-width: 1600px) {
@@ -811,6 +818,12 @@ table {
     max-width: 100%;
     width: 95%;
     margin: 0 auto;
+  }
+  .wrapper .center2 {
+    width: 95%;
+  }
+  .wrapper .center3 {
+    width: 95%;
   }
 }
 
@@ -825,11 +838,37 @@ table {
   .wrapper .four .four-wrapper .wid p {
     color: #D61FDA;
   }
+  .wrapper .five .five-wrapper .cards .card {
+    width: auto;
+  }
+  .wrapper .six-bg .six .fit-wrapper .fit-mirror {
+    margin-bottom: 743px;
+  }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1350px) {
+  .wrapper .seven-bg .seven .seven-content .right li:not(:first-child) {
+    color: #000000;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper .four .four-wrapper .wid {
+    width: 95%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 190px;
+  }
   .wrapper .four .four-wrapper .wid h3 {
     color: #D61FDA;
+    width: 95%;
+  }
+  .wrapper .four .four-wrapper .wid p {
+    width: 95%;
+  }
+  .wrapper .six-bg .six .fit-wrapper .fit-mirror {
+    margin-bottom: 592px;
   }
 }
 
@@ -847,11 +886,18 @@ table {
   .wrapper .two .two-cards div {
     margin: 50px 0;
   }
-  .wrapper .two .two-cards div h3 {
-    width: auto;
+  .wrapper .five {
+    background-size: 1805px 860px;
   }
-  .wrapper .two .two-cards div p {
-    width: auto;
+  .wrapper .five .five-wrapper .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .wrapper .five .five-wrapper .card {
+    padding-bottom: 35px;
   }
 }
 
@@ -860,6 +906,18 @@ table {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 340px;
+  }
+  .wrapper .four .four-wrapper .wid {
+    margin-bottom: 150px;
+  }
+  .wrapper .six-bg .six h3 {
+    width: auto;
+  }
+  .wrapper .six-bg .six .fit-wrapper .fit-mirror {
+    margin-bottom: 424px;
+  }
+  .wrapper footer .footer-cont h5 {
+    width: auto;
   }
 }
 
@@ -886,6 +944,41 @@ table {
   .wrapper .three .three-wrapper p {
     width: 95%;
   }
+  .wrapper .four .four-wrapper .wid {
+    margin-bottom: 90px;
+    width: 95%;
+  }
+  .wrapper .five {
+    background-size: 1805px 1060px;
+  }
+  .wrapper .six-bg .six {
+    background-position: 0px 900px;
+  }
+  .wrapper .six-bg .six .fit-wrapper {
+    margin-bottom: 436px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapper .six-bg .six .fit-wrapper .fit-mirror {
+    margin: 0px 0px 25px;
+  }
+  .wrapper .seven-bg .seven h2 {
+    font-size: 40px;
+    padding: 85px 0px 60px;
+  }
+  .wrapper .seven-bg .seven .seven-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px 0px;
+    background: 0px 0px url(/images/rectangle-7.png) no-repeat;
+    background-size: 776px 550px;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -898,6 +991,9 @@ table {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     height: 200px;
+  }
+  .wrapper header button {
+    width: 100%;
   }
   .wrapper .one .wrapper-one {
     text-align: center;
@@ -929,10 +1025,18 @@ table {
             justify-content: space-evenly;
     height: 250px;
   }
+  .wrapper .one .wrapper-one div .btn .btn-left {
+    margin: 0px auto;
+  }
+  .wrapper .one .wrapper-one div .btn .btn-right {
+    margin: 0px auto;
+  }
   .wrapper .two .two-cards div h3 {
+    width: auto;
     font-size: 20px;
   }
   .wrapper .two .two-cards div p {
+    width: auto;
     font-size: 16px;
   }
   .wrapper .three .three-wrapper h2 {
@@ -945,11 +1049,144 @@ table {
   .wrapper .four {
     background-position: center;
   }
+  .wrapper .four .four-wrapper .wid {
+    margin-bottom: 150px;
+  }
+  .wrapper .four .four-wrapper .wid h3 {
+    font-size: 40px;
+  }
+  .wrapper .four .four-wrapper .wid p {
+    font-size: 20px;
+  }
+  .wrapper .five .five-wrapper .earn {
+    font-size: 40px;
+  }
+  .wrapper .five .five-wrapper .cards .card h4 {
+    font-size: 20px;
+  }
+  .wrapper .six-bg {
+    margin: 0 auto;
+  }
+  .wrapper .six-bg .six {
+    background-position: 0px 630px;
+  }
+  .wrapper .six-bg .six h3 {
+    font-size: 40px;
+    margin: 70px 0px 40px;
+  }
+  .wrapper .six-bg .six .fit-wrapper .fit-mirror h4 {
+    font-size: 26px;
+  }
+  .wrapper .six-bg .six .fit-wrapper .fit-mirror h5 {
+    font-size: 16px;
+    margin: 20px 0px;
+  }
+  .wrapper .six-bg .six .fit-wrapper .fit-mirror p {
+    font-size: 16px;
+  }
+  .wrapper .seven-bg .seven h2 {
+    font-size: 40px;
+    padding: 70px 0px 50px;
+  }
+  .wrapper .seven-bg .seven .seven-content .left {
+    font-size: 24px;
+  }
+  .wrapper .seven-bg .seven .seven-content .left li:not(:first-child) {
+    font-size: 16px;
+  }
+  .wrapper .seven-bg .seven .seven-content .right {
+    font-size: 24px;
+  }
+  .wrapper .seven-bg .seven .seven-content .right li:not(:first-child) {
+    font-size: 16px;
+  }
+  .wrapper footer {
+    background: center -106px url(/images/footer-girl.png) no-repeat, 0px -460px url(/images/background-footer.png);
+  }
+  .wrapper footer .footer-cont h3 {
+    font-size: 40px;
+    margin-bottom: 27px;
+  }
+  .wrapper footer .footer-cont h5 {
+    font-size: 16px;
+    margin: 20px 0px;
+  }
+  .wrapper footer .footer-cont form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper footer .footer-cont form label input {
+    width: 100%;
+  }
+  .wrapper footer .footer-cont form button {
+    margin: 15px 0px 0px;
+  }
+  .wrapper footer .footer-cont p {
+    font-size: 16px;
+    width: auto;
+    padding: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .wrapper .six-bg .six .fit-wrapper {
+    margin-bottom: 320px;
+  }
+  .wrapper .seven-bg .seven .seven-content .left {
+    padding: 30px 4px 30px 30px;
+  }
+  .wrapper .seven-bg .seven .seven-content .right {
+    padding: 30px 30px 30px 0px;
+  }
 }
 
 @media screen and (max-width: 450px) {
   .wrapper header button {
     width: 100%;
+  }
+  .wrapper .four .four-wrapper .wid {
+    margin: 90px 0px 100px;
+  }
+  .wrapper .five {
+    background-size: 1805px 1260px;
+  }
+  .wrapper .six-bg {
+    margin: 0 auto;
+  }
+  .wrapper .six-bg .six {
+    background-position: 0px 680px;
+  }
+  .wrapper .six-bg .six .fit-wrapper {
+    margin-bottom: 280px;
+  }
+  .wrapper .seven-bg .seven .seven-content .left {
+    padding: 5px 4px 0px 5px;
+  }
+  .wrapper .seven-bg .seven .seven-content .right {
+    padding: 5px 5px 5px 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .wrapper .seven-bg .seven .seven-content .left li:nth-child(4) {
+    height: 58px;
+  }
+  .wrapper .seven-bg .seven .seven-content .right li:nth-child(4) {
+    height: 58px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .wrapper .six-bg .six h3 {
+    font-size: 38px;
+  }
+  .wrapper .six-bg .six .fit-wrapper {
+    margin-bottom: 208px;
   }
 }
 /*# sourceMappingURL=style.css.map */
