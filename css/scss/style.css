@@ -76,6 +76,26 @@ table {
   margin: 0 auto;
 }
 
+.checkbox:checked ~ .wrapper header .ul {
+  left: 0px;
+}
+
+.checkbox:checked ~ .checkbox-button .button-line:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 7px;
+}
+
+.checkbox:checked ~ .checkbox-button .button-line:nth-child(2) {
+  opacity: 0;
+}
+
+.checkbox:checked ~ .checkbox-button .button-line:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: -7px;
+}
+
 .wrapper {
   width: 100%;
   max-width: 1920px;
@@ -99,7 +119,19 @@ table {
   background-color: #FFFFFF;
 }
 
-.wrapper header h1 {
+.wrapper header .fit-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper header .fit-wrap h1 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
@@ -113,13 +145,48 @@ table {
   transition: 0.5s ease-out;
 }
 
-.wrapper header h1:hover {
+.wrapper header .fit-wrap h1:hover {
   color: #D61FDA;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.wrapper header ul {
+.wrapper header .fit-wrap .checkbox {
+  display: none;
+}
+
+.wrapper header .fit-wrap .checkbox-button {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #8B1CFB;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.wrapper header .fit-wrap .checkbox-button .button-line {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #1B1B20;
+  margin: 2px 0;
+  position: relative;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.wrapper header .ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,7 +196,8 @@ table {
   width: 445px;
 }
 
-.wrapper header ul li {
+.wrapper header .ul .li {
+  text-decoration: none;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -141,7 +209,7 @@ table {
   transition: 0.5s ease-out;
 }
 
-.wrapper header ul li:hover {
+.wrapper header .ul .li:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   color: #D61FDA;
@@ -902,7 +970,7 @@ table {
 }
 
 @media screen and (max-width: 1000px) {
-  .wrapper header ul {
+  .wrapper header .ul {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 340px;
@@ -925,9 +993,48 @@ table {
   .wrapper header {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 20px;
+    display: block;
   }
-  .wrapper header ul {
-    display: none;
+  .wrapper header .ul {
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #626262;
+    opacity: 0.9;
+    width: 200px;
+    height: 200px;
+    padding: 100px 100px;
+    top: 0px;
+    left: -100%;
+    border-radius: 0 0 50px 0;
+    z-index: 1;
+    -webkit-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+  }
+  .wrapper header .ul .li {
+    padding-bottom: 30px;
+    color: #FFFFFF;
+  }
+  .wrapper header .ul .li:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    color: #D61FDA;
+  }
+  .wrapper header .fit-wrap {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .wrapper header .fit-wrap .checkbox-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .wrapper .one {
     background-position: center;

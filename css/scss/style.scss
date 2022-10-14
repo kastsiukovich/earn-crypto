@@ -37,7 +37,24 @@ $color-2d: #2D2D2D;
    width: 100%;
    margin: 0 auto;
 }
-
+.checkbox:checked{
+   &~.wrapper header .ul{
+      left: 0px;
+   }
+   &~.checkbox-button .button-line{
+      &:nth-child(1){
+         transform: rotate(45deg);
+         top: 7px;
+      }
+      &:nth-child(2){
+         opacity: 0;
+      }
+      &:nth-child(3){
+         transform: rotate(-45deg);
+         top: -7px;
+      }
+   }
+}
 
 .wrapper{
    width: 100%;
@@ -52,23 +69,56 @@ $color-2d: #2D2D2D;
        align-items: center;
       height: 115px;
       background-color: $color-white;
-      h1{
-         @include ft('Inter', normal, 700, 24px, 120%, #14125F);
-         cursor: pointer;
-         letter-spacing: 0.08em;
-         text-transform: uppercase;
-         transition: 0.5s ease-out;
-         &:hover{
-            color: $color-pink;
-            transform: scale(1.1);
+      .fit-wrap{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         h1{
+            @include ft('Inter', normal, 700, 24px, 120%, #14125F);
+            cursor: pointer;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: 0.5s ease-out;
+            &:hover{
+               color: $color-pink;
+               transform: scale(1.1);
+            }
+         }
+         .checkbox{
+            display: none;
+         }
+         
+         .checkbox-button{
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: #8B1CFB;
+            cursor: pointer;
+            z-index: 1;
+            
+            .button-line{
+               display: block;
+               width: 30px;
+               height: 3px;
+               background-color: $color-1b;
+               margin: 2px 0;
+               position: relative;
+               transition: 0.5s ease-out;
+            }
          }
       }
-      ul{
+      
+      .ul{
          display: flex;
          justify-content: space-between;
          width: 445px;
 
-         li{
+         .li{
+            text-decoration: none;
             @include ft('Inter', normal, 500, 16px, 19px, $color-1b);
             cursor: pointer;
             transition: 0.5s ease-out;
@@ -77,7 +127,9 @@ $color-2d: #2D2D2D;
                color: $color-pink;
             }
          }
+
       }
+      
       button{
          background: linear-gradient(180deg, #8B1CFB 0%, #B02CDF 100%);
          border-radius: 30px;
@@ -158,7 +210,9 @@ $color-2d: #2D2D2D;
       .two-cards{
             display: flex;
             justify-content: space-between;
-
+         // &:nth-child(1){
+         //    --animate-delay: 1s;
+         // }
          div{
             text-align: center;
             margin: 100px 0;
@@ -166,8 +220,8 @@ $color-2d: #2D2D2D;
             transition: 0.5s ease-out;
             &:hover{
                transform: scale(1.1);
-               
             }
+
             img{
                margin-bottom: 24px;
             }
@@ -623,7 +677,7 @@ $color-2d: #2D2D2D;
    }
    @media screen and (max-width: 1000px) {
       header{
-         ul{
+         .ul{
             justify-content: space-around;
             width: 340px;
          }
@@ -659,9 +713,39 @@ $color-2d: #2D2D2D;
    @media screen and (max-width: 800px) {
       header{
          justify-content: space-around;
-         ul{
-            display: none;
+         flex-direction: column;
+         padding-top: 20px;
+         display: block;
+         .ul{
+            position: fixed;
+            flex-direction: column;
+            background-color: #626262;
+            opacity: 0.9;
+            width: 200px;
+            height: 200px;
+            padding: 100px 100px;
+            top: 0px;
+            left: -100%;
+            border-radius: 0 0 50px 0;
+            z-index: 1;
+            transition: 0.5s ease-in;
+            .li{
+               padding-bottom: 30px;
+               color: $color-white;
+               &:hover{
+                  transform: scale(1.1);
+                  color: $color-pink;
+               }
+            }
          }
+         .fit-wrap{
+            width: 100%;
+            padding-bottom: 20px;
+            .checkbox-button{
+               display:flex;
+            }
+         }
+        
       }
       .one{
          background-position: center;
