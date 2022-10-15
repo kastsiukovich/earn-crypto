@@ -76,10 +76,6 @@ table {
   margin: 0 auto;
 }
 
-.checkbox:checked ~ .wrapper header .ul {
-  left: 0px;
-}
-
 .checkbox:checked ~ .checkbox-button .button-line:nth-child(1) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -100,9 +96,9 @@ table {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  font-family: 'Fredoka', sans-serif;
-  font-family: 'Inter', sans-serif;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Fredoka", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .wrapper header {
@@ -116,7 +112,7 @@ table {
       -ms-flex-align: center;
           align-items: center;
   height: 115px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .wrapper header .fit-wrap {
@@ -137,7 +133,7 @@ table {
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
-  color: #14125F;
+  color: #14125f;
   cursor: pointer;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -146,7 +142,7 @@ table {
 }
 
 .wrapper header .fit-wrap h1:hover {
-  color: #D61FDA;
+  color: #d61fda;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -170,7 +166,7 @@ table {
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  background-color: #8B1CFB;
+  background-color: #8b1cfb;
   cursor: pointer;
   z-index: 1;
 }
@@ -179,7 +175,7 @@ table {
   display: block;
   width: 30px;
   height: 3px;
-  background-color: #1B1B20;
+  background-color: #1b1b20;
   margin: 2px 0;
   position: relative;
   -webkit-transition: 0.5s ease-out;
@@ -203,7 +199,7 @@ table {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #1B1B20;
+  color: #1b1b20;
   cursor: pointer;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
@@ -212,22 +208,22 @@ table {
 .wrapper header .ul .li:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  color: #D61FDA;
+  color: #d61fda;
 }
 
 .wrapper header button {
-  background: -webkit-gradient(linear, left top, left bottom, from(#8B1CFB), to(#B02CDF));
-  background: linear-gradient(180deg, #8B1CFB 0%, #B02CDF 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#8b1cfb), to(#b02cdf));
+  background: linear-gradient(180deg, #8b1cfb 0%, #b02cdf 100%);
   border-radius: 30px;
   -webkit-box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
           box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
-  border: 1px solid #8B1CFB;
+  border: 1px solid #8b1cfb;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 120%;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   padding: 16px 32px;
   cursor: pointer;
@@ -239,8 +235,8 @@ table {
 }
 
 .wrapper header button:hover {
-  color: #D61FDA;
-  background: #FFFFFF;
+  color: #d61fda;
+  background: #ffffff;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -326,7 +322,7 @@ table {
 }
 
 .wrapper .two {
-  background: linear-gradient(94.9deg, #FFF5DD 1.6%, rgba(170, 86, 254, 0.32) 38.13%, rgba(254, 86, 217, 0.28) 58.65%, rgba(86, 254, 254, 0.28) 99.73%);
+  background: linear-gradient(94.9deg, #fff5dd 1.6%, rgba(170, 86, 254, 0.32) 38.13%, rgba(254, 86, 217, 0.28) 58.65%, rgba(86, 254, 254, 0.28) 99.73%);
 }
 
 .wrapper .two .two-cards {
@@ -369,7 +365,7 @@ table {
 }
 
 .wrapper .two .two-cards div h3:hover {
-  color: #D61FDA;
+  color: #d61fda;
 }
 
 .wrapper .two .two-cards div p {
@@ -378,14 +374,14 @@ table {
   font-weight: 400;
   font-size: 24px;
   line-height: 120%;
-  color: #1B1B20;
+  color: #1b1b20;
   width: 325px;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
 .wrapper .two .two-cards div p:hover {
-  color: #D61FDA;
+  color: #d61fda;
 }
 
 .wrapper .three {
@@ -417,7 +413,7 @@ table {
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
-  color: #1B1B20;
+  color: #1b1b20;
 }
 
 .wrapper .three .three-wrapper h2 {
@@ -428,12 +424,12 @@ table {
   font-weight: 700;
   font-size: 56px;
   line-height: 120%;
-  color: #1B1B20;
+  color: #1b1b20;
   width: 592px;
 }
 
 .wrapper .three .three-wrapper h2 span {
-  color: #D61FDA;
+  color: #d61fda;
 }
 
 .wrapper .three .three-wrapper p {
@@ -492,14 +488,14 @@ table {
   font-weight: 700;
   font-size: 56px;
   line-height: 120%;
-  color: #1B1B20;
+  color: #1b1b20;
   width: 669px;
   text-transform: uppercase;
   margin-bottom: 36px;
 }
 
 .wrapper .four .four-wrapper .wid h3 span {
-  color: #D61FDA;
+  color: #d61fda;
 }
 
 .wrapper .four .four-wrapper .wid p {
@@ -564,7 +560,7 @@ table {
 .wrapper .five .five-wrapper .cards .card ul {
   font-weight: 400px;
   font-size: 16px;
-  color: #1B1B20;
+  color: #1b1b20;
   list-style-type: disc;
 }
 
@@ -609,13 +605,13 @@ table {
   font-weight: 700;
   font-size: 56px;
   line-height: 120%;
-  color: #1B1B20;
+  color: #1b1b20;
   width: 900px;
   margin: 148px 0px 80px;
 }
 
 .wrapper .six-bg .six h3 span {
-  color: #D61FDA;
+  color: #d61fda;
 }
 
 .wrapper .six-bg .six .fit-wrapper {
@@ -644,7 +640,7 @@ table {
   font-weight: 700;
   font-size: 28px;
   line-height: 120%;
-  color: #2D2D2D;
+  color: #2d2d2d;
   margin-bottom: 926px;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
@@ -662,12 +658,12 @@ table {
   font-weight: 700;
   font-size: 48px;
   line-height: 120%;
-  color: #1B1B20;
+  color: #1b1b20;
   text-transform: uppercase;
 }
 
 .wrapper .six-bg .six .fit-wrapper .fit-mirror h4 span {
-  color: #D61FDA;
+  color: #d61fda;
 }
 
 .wrapper .six-bg .six .fit-wrapper .fit-mirror h5 {
@@ -691,13 +687,13 @@ table {
   font-weight: 700;
   font-size: 56px;
   line-height: 120%;
-  color: #1B1B20;
+  color: #1b1b20;
   padding: 191px 0px 120px;
   text-align: center;
 }
 
 .wrapper .seven-bg .seven h2 span {
-  color: #D61FDA;
+  color: #d61fda;
 }
 
 .wrapper .seven-bg .seven .seven-content {
@@ -731,7 +727,7 @@ table {
 .wrapper .seven-bg .seven .seven-content .left li:not(:first-child):hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  color: #D61FDA;
+  color: #d61fda;
 }
 
 .wrapper .seven-bg .seven .seven-content .left li:first-child {
@@ -762,7 +758,7 @@ table {
 .wrapper .seven-bg .seven .seven-content .right li:not(:first-child):hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  color: #D61FDA;
+  color: #d61fda;
 }
 
 .wrapper .seven-bg .seven .seven-content .right li:first-child {
@@ -796,7 +792,7 @@ table {
   font-weight: 700;
   font-size: 56px;
   line-height: 120%;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 54px;
 }
 
@@ -810,7 +806,7 @@ table {
   font-weight: 400;
   font-size: 28px;
   line-height: 120%;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 40px;
   width: 883px;
 }
@@ -818,7 +814,7 @@ table {
 .wrapper footer .footer-cont form label input {
   width: 337px;
   height: 51px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 30px;
@@ -827,18 +823,18 @@ table {
 }
 
 .wrapper footer .footer-cont form button {
-  background: -webkit-gradient(linear, left top, left bottom, from(#8B1CFB), to(#B02CDF));
-  background: linear-gradient(180deg, #8B1CFB 0%, #B02CDF 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#8b1cfb), to(#b02cdf));
+  background: linear-gradient(180deg, #8b1cfb 0%, #b02cdf 100%);
   border-radius: 30px;
   -webkit-box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
           box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
-  border: 1px solid #8B1CFB;
+  border: 1px solid #8b1cfb;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 120%;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   padding: 16px 32px;
   cursor: pointer;
@@ -853,8 +849,8 @@ table {
 .wrapper footer .footer-cont form button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  color: #D61FDA;
-  background: #FFFFFF;
+  color: #d61fda;
+  background: #ffffff;
 }
 
 .wrapper footer .footer-cont p {
@@ -867,7 +863,7 @@ table {
   font-weight: 400;
   font-size: 24px;
   line-height: 120%;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 40px 0px 88px 0px;
   width: 529px;
 }
@@ -904,7 +900,7 @@ table {
     color: #000000;
   }
   .wrapper .four .four-wrapper .wid p {
-    color: #D61FDA;
+    color: #d61fda;
   }
   .wrapper .five .five-wrapper .cards .card {
     width: auto;
@@ -929,7 +925,7 @@ table {
     margin-bottom: 190px;
   }
   .wrapper .four .four-wrapper .wid h3 {
-    color: #D61FDA;
+    color: #d61fda;
     width: 95%;
   }
   .wrapper .four .four-wrapper .wid p {
@@ -1020,12 +1016,12 @@ table {
   }
   .wrapper header .ul .li {
     padding-bottom: 30px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .wrapper header .ul .li:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
-    color: #D61FDA;
+    color: #d61fda;
   }
   .wrapper header .fit-wrap {
     width: 100%;

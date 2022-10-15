@@ -1,94 +1,99 @@
 @import "./nullstyle";
 
-@mixin ft($ff, $fst, $fw, $fs, $lh, $c){
+@mixin ft($ff, $fst, $fw, $fs, $lh, $c) {
    font-family: $ff;
    font-style: $fst;
    font-weight: $fw;
    font-size: $fs;
    line-height: $lh;
    color: $c;
-   // background-image: $c; 
+   // background-image: $c;
    // linear-gradient(#14125F 100%, #1E1C75 21%)
 }
-$color-white: #FFFFFF;
+$color-white: #ffffff;
 $color-black: #000000;
-$color-1b: #1B1B20;
+$color-1b: #1b1b20;
 $color-grey: #626262;
-$color-pink: #D61FDA;
-$color-2d: #2D2D2D;
-.center{
+$color-pink: #d61fda;
+$color-2d: #2d2d2d;
+.center {
    max-width: 1515px;
    width: 100%;
    margin: 0 auto;
 }
-.center1{
+.center1 {
    max-width: 1200px;
    width: 100%;
    margin: 0 auto;
 }
-.center2{
+.center2 {
    max-width: 1654px;
    width: 100;
    margin: 0 auto;
    // height: 410px;
 }
-.center3{
+.center3 {
    max-width: 1430px;
    width: 100%;
    margin: 0 auto;
 }
-.checkbox:checked{
-   &~.wrapper header .ul{
-      left: 0px;
-   }
-   &~.checkbox-button .button-line{
-      &:nth-child(1){
+
+.checkbox:checked {
+   // &~.wrapper header:nth-child(2){
+   //    background-color: #000000;
+   //    z-index: 2;
+   // }
+   // &~#ul{
+   //    background-color: #8B1CFB;
+   // }
+   & ~ .checkbox-button .button-line {
+      &:nth-child(1) {
          transform: rotate(45deg);
          top: 7px;
       }
-      &:nth-child(2){
+      &:nth-child(2) {
          opacity: 0;
       }
-      &:nth-child(3){
+      &:nth-child(3) {
          transform: rotate(-45deg);
          top: -7px;
       }
    }
 }
 
-.wrapper{
+.wrapper {
    width: 100%;
    max-width: 1920px;
    margin: 0 auto;
-   font-family: 'Fredoka', sans-serif;
-   font-family: 'Inter', sans-serif;
-   font-family: 'Montserrat', sans-serif;
-   header{
+   font-family: "Fredoka", sans-serif;
+   font-family: "Inter", sans-serif;
+   font-family: "Montserrat", sans-serif;
+   header {
       display: flex;
       justify-content: space-between;
-       align-items: center;
+      align-items: center;
       height: 115px;
       background-color: $color-white;
-      .fit-wrap{
+      .fit-wrap {
          display: flex;
          justify-content: space-between;
          align-items: center;
-         h1{
-            @include ft('Inter', normal, 700, 24px, 120%, #14125F);
+         h1 {
+            @include ft("Inter", normal, 700, 24px, 120%, #14125f);
             cursor: pointer;
             letter-spacing: 0.08em;
             text-transform: uppercase;
             transition: 0.5s ease-out;
-            &:hover{
+            &:hover {
                color: $color-pink;
                transform: scale(1.1);
             }
          }
-         .checkbox{
+         .checkbox {
             display: none;
          }
-         
-         .checkbox-button{
+
+         .checkbox-button {
             display: none;
             align-items: center;
             justify-content: center;
@@ -96,11 +101,11 @@ $color-2d: #2D2D2D;
             width: 50px;
             height: 50px;
             border-radius: 50px;
-            background-color: #8B1CFB;
+            background-color: #8b1cfb;
             cursor: pointer;
             z-index: 1;
-            
-            .button-line{
+
+            .button-line {
                display: block;
                width: 30px;
                height: 3px;
@@ -111,67 +116,63 @@ $color-2d: #2D2D2D;
             }
          }
       }
-      
-      .ul{
+
+      .ul {
          display: flex;
          justify-content: space-between;
          width: 445px;
 
-         .li{
+         .li {
             text-decoration: none;
-            @include ft('Inter', normal, 500, 16px, 19px, $color-1b);
+            @include ft("Inter", normal, 500, 16px, 19px, $color-1b);
             cursor: pointer;
             transition: 0.5s ease-out;
-            &:hover{
+            &:hover {
                transform: scale(1.1);
                color: $color-pink;
             }
          }
-
       }
-      
-      button{
-         background: linear-gradient(180deg, #8B1CFB 0%, #B02CDF 100%);
+
+      button {
+         background: linear-gradient(180deg, #8b1cfb 0%, #b02cdf 100%);
          border-radius: 30px;
          box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
-         border: 1px solid #8B1CFB;
-         @include ft('Inter', normal, 700, 16px, 120%, $color-white);
+         border: 1px solid #8b1cfb;
+         @include ft("Inter", normal, 700, 16px, 120%, $color-white);
          text-transform: uppercase;
          padding: 16px 32px;
          cursor: pointer;
          letter-spacing: 0.08em;
          box-sizing: border-box;
          transition: 0.5s ease-out;
-         &:hover{
+         &:hover {
             color: $color-pink;
             background: $color-white;
             transform: scale(1.1);
          }
       }
-      
    }
-   .one{
-      background: no-repeat url('/images/yoga-girl-1.png') 1128px 40px;
-      .wrapper-one{
+   .one {
+      background: no-repeat url("/images/yoga-girl-1.png") 1128px 40px;
+      .wrapper-one {
          display: flex;
          justify-content: space-between;
-       
-         div{
+
+         div {
             width: 743px;
             margin-bottom: 256px;
-            h1{
-               @include ft('Fredoka', normal, 500, 64px, 120%, #252525);
+            h1 {
+               @include ft("Fredoka", normal, 500, 64px, 120%, #252525);
                margin: 110px 0px 36px 0px;
-               
-               
             }
-            p{
-               @include ft('Inter', normal, 400, 24px, 120%, #626262);
+            p {
+               @include ft("Inter", normal, 400, 24px, 120%, #626262);
                margin-bottom: 60px;
             }
-            .btn{
+            .btn {
                margin-bottom: 12px;
-               .btn-left{
+               .btn-left {
                   background: rgba(219, 184, 255, 0);
                   border: 0px;
                   width: 224px;
@@ -179,114 +180,117 @@ $color-2d: #2D2D2D;
                   margin-right: 23px;
                   transition: 0.5s ease-out;
                   cursor: pointer;
-                  &:hover{
+                  &:hover {
                      transform: scale(1.1);
                   }
                }
-               .btn-right{
+               .btn-right {
                   background: rgba(219, 184, 255, 0);
                   border: 0px;
                   width: 224px;
                   height: 66px;
                   transition: 0.5s ease-out;
                   cursor: pointer;
-                  &:hover{
+                  &:hover {
                      transform: scale(1.1);
                   }
                }
             }
          }
-         .fitcoin{
+         .fitcoin {
             width: 426px;
             height: 504px;
             margin-right: 67px;
             margin-top: 101px;
          }
       }
-      
    }
-   .two{
-      background: linear-gradient(94.9deg, #FFF5DD 1.6%, rgba(170, 86, 254, 0.32) 38.13%, rgba(254, 86, 217, 0.28) 58.65%, rgba(86, 254, 254, 0.28) 99.73%);
-      .two-cards{
-            display: flex;
-            justify-content: space-between;
+   .two {
+      background: linear-gradient(
+         94.9deg,
+         #fff5dd 1.6%,
+         rgba(170, 86, 254, 0.32) 38.13%,
+         rgba(254, 86, 217, 0.28) 58.65%,
+         rgba(86, 254, 254, 0.28) 99.73%
+      );
+      .two-cards {
+         display: flex;
+         justify-content: space-between;
          // &:nth-child(1){
          //    --animate-delay: 1s;
          // }
-         div{
+         div {
             text-align: center;
             margin: 100px 0;
             cursor: pointer;
             transition: 0.5s ease-out;
-            &:hover{
+            &:hover {
                transform: scale(1.1);
             }
 
-            img{
+            img {
                margin-bottom: 24px;
             }
-            h3{
+            h3 {
                margin-bottom: 24px;
-               @include ft('Inter', normal, 700, 32px, 120%, $color-black);
+               @include ft("Inter", normal, 700, 32px, 120%, $color-black);
                width: 326px;
                transition: 0.5s ease-out;
-               &:hover{
+               &:hover {
                   color: $color-pink;
                }
             }
-            p{
-               @include ft('Inter', normal, 400, 24px, 120%, $color-1b);
+            p {
+               @include ft("Inter", normal, 400, 24px, 120%, $color-1b);
                width: 325px;
                transition: 0.5s ease-out;
-               &:hover{
+               &:hover {
                   color: $color-pink;
                }
             }
-           
          }
       }
    }
-   .three{
-      background: url('/images/background.png');
-      
-      .three-wrapper{
+   .three {
+      background: url("/images/background.png");
 
+      .three-wrapper {
          display: flex;
          flex-direction: column;
          align-items: center;
          text-align: center;
-         img{
+         img {
             margin: 28px 0px 8px 0px;
          }
-         h5{
+         h5 {
             margin: 48px 0 20px;
-            @include ft('Inter', normal, 400, 20px, 120%, $color-1b)
+            @include ft("Inter", normal, 400, 20px, 120%, $color-1b);
          }
-         h2{
+         h2 {
             text-transform: uppercase;
             margin-bottom: 36px;
-            @include ft('Inter', normal, 700, 56px, 120%, $color-1b);
+            @include ft("Inter", normal, 700, 56px, 120%, $color-1b);
             width: 592px;
-            span{
+            span {
                color: $color-pink;
             }
          }
-         p{
+         p {
             width: 743px;
             margin-bottom: 125px;
-            @include ft('Inter', normal, 400, 24px, 120%, $color-grey)
+            @include ft("Inter", normal, 400, 24px, 120%, $color-grey);
          }
       }
    }
-   .four{
-      background: url('/images/yoga-girl.png') no-repeat 0px 24px;
-      .four-wrapper{
+   .four {
+      background: url("/images/yoga-girl.png") no-repeat 0px 24px;
+      .four-wrapper {
          display: flex;
          flex-direction: column;
          justify-content: flex-end;
          text-align: center;
          // width: 900px;
-         .wid{
+         .wid {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
@@ -294,116 +298,114 @@ $color-2d: #2D2D2D;
             align-self: end;
             text-align: center;
             margin: 192px 0 322px;
-            h3{
+            h3 {
                align-self: center;
-               @include ft('Inter', normal, 700, 56px, 120%, $color-1b);
-               span{
+               @include ft("Inter", normal, 700, 56px, 120%, $color-1b);
+               span {
                   color: $color-pink;
                }
                width: 669px;
                text-transform: uppercase;
                margin-bottom: 36px;
             }
-            p{
+            p {
                align-self: end;
-               @include ft('Inter', normal, 400, 24px, 120%, $color-grey);
+               @include ft("Inter", normal, 400, 24px, 120%, $color-grey);
                width: 900px;
             }
          }
-        
       }
    }
-   .five{
-      background: url('/images/rectangle.png') no-repeat;
+   .five {
+      background: url("/images/rectangle.png") no-repeat;
       background-size: 1805px 650px;
       background-position: -73px -61px;
       margin-bottom: 38px;
       border-radius: 20px;
-      .five-wrapper{
-         .earn{
-            @include ft('Inter', normal, 700, 56px, 120%, $color-black);
+      .five-wrapper {
+         .earn {
+            @include ft("Inter", normal, 700, 56px, 120%, $color-black);
             text-transform: uppercase;
             padding: 60px 0px 48px;
             text-align: center;
          }
-         .cards{
+         .cards {
             display: flex;
             justify-content: space-between;
             padding-bottom: 60px;
-            .card{
-               @include ft('Inter', normal, 700, 32px, 120%, $color-black);
+            .card {
+               @include ft("Inter", normal, 700, 32px, 120%, $color-black);
                width: 400px;
 
-               h4{
+               h4 {
                   text-transform: capitalize;
                   text-align: center;
                   margin-bottom: 24px;
                }
-               ul{
+               ul {
                   font-weight: 400px;
                   font-size: 16px;
                   color: $color-1b;
                   list-style-type: disc;
-                     li{
-                        margin-left: 15px;
-                        margin-bottom: 8px;
-                     }
-                     li:last-child{
-                        margin-bottom: 0px;
-                     }
+                  li {
+                     margin-left: 15px;
+                     margin-bottom: 8px;
+                  }
+                  li:last-child {
+                     margin-bottom: 0px;
+                  }
                }
             }
          }
       }
    }
-   .six-bg{
+   .six-bg {
       margin: 0px 48px;
-      background: url('/images/background-1.png') no-repeat;
+      background: url("/images/background-1.png") no-repeat;
       background-size: 1824px 862px;
       background-position: 0px 0px;
-      .six{
+      .six {
          display: flex;
          justify-content: center;
          flex-direction: column;
-         background: 0px 491px url('/images/mirrors.png') no-repeat;
+         background: 0px 491px url("/images/mirrors.png") no-repeat;
          background-size: contain;
-         h3{
+         h3 {
             align-self: center;
             text-align: center;
-            @include ft('Inter', normal, 700, 56px, 120%, $color-1b);
+            @include ft("Inter", normal, 700, 56px, 120%, $color-1b);
             width: 900px;
             margin: 148px 0px 80px;
          }
-         h3 span{
-            color: $color-pink
+         h3 span {
+            color: $color-pink;
          }
-         .fit-wrapper{
+         .fit-wrapper {
             display: flex;
             justify-content: space-between;
             margin-bottom: 12px;
-            .fit-mirror{ 
+            .fit-mirror {
                display: flex;
                flex-direction: column;
                align-items: center;
-               @include ft('Inter', normal, 700, 28px, 120%, $color-2d);
+               @include ft("Inter", normal, 700, 28px, 120%, $color-2d);
                margin-bottom: 926px;
                transition: 0.5s ease-out;
                cursor: pointer;
-               &:hover{
+               &:hover {
                   transform: scale(1.1);
                }
-               h4{
-                  @include ft('Inter', normal, 700, 48px, 120%, $color-1b);
+               h4 {
+                  @include ft("Inter", normal, 700, 48px, 120%, $color-1b);
                   text-transform: uppercase;
                }
-               h4 span{
+               h4 span {
                   color: $color-pink;
                }
-               h5{
-               
+               h5 {
                   margin: 24px 0px;
                }
-               p{
+               p {
                   width: 270px;
                   font-weight: 400;
                   font-size: 24px;
@@ -413,91 +415,89 @@ $color-2d: #2D2D2D;
          }
       }
    }
-   .seven-bg{
-      background: 1920px 1085px url('/images/background-2.png'), 1126px 327px url('/images/coins-1.png') no-repeat;
-      .seven{
-         h2{
-            @include ft('Inter', normal, 700, 56px, 120%, $color-1b);
+   .seven-bg {
+      background: 1920px 1085px url("/images/background-2.png"), 1126px 327px url("/images/coins-1.png") no-repeat;
+      .seven {
+         h2 {
+            @include ft("Inter", normal, 700, 56px, 120%, $color-1b);
             padding: 191px 0px 120px;
             text-align: center;
-            span{
+            span {
                color: $color-pink;
             }
          }
-         .seven-content{
+         .seven-content {
             display: flex;
             padding: 0px 0px 246px 69px;
-            background: 69px 0px url('/images/rectangle-7.png') no-repeat;
+            background: 69px 0px url("/images/rectangle-7.png") no-repeat;
             background-size: 638px 554px;
-            .left{
+            .left {
                padding: 60px 4px 60px 60px;
-               @include ft('Inter', normal, 700, 32px, 120%, $color-black);
-               
-               li:not(:first-child){
+               @include ft("Inter", normal, 700, 32px, 120%, $color-black);
+
+               li:not(:first-child) {
                   font-weight: 400px;
                   font-size: 24px;
                   margin-bottom: 4px;
                   cursor: pointer;
                   transition: 0.5s ease-out;
-                  &:hover{
+                  &:hover {
                      transform: scale(1.1);
                      color: $color-pink;
                   }
                }
-               li:first-child{
+               li:first-child {
                   margin-bottom: 12px;
                }
             }
-            .right{
+            .right {
                text-align: right;
                padding: 60px 60px 60px 0px;
-               @include ft('Inter', normal, 700, 32px, 120%, $color-black);
-               
-              
-               li:not(:first-child){
+               @include ft("Inter", normal, 700, 32px, 120%, $color-black);
+
+               li:not(:first-child) {
                   font-weight: 400px;
                   font-size: 24px;
                   color: $color-grey;
                   margin-bottom: 4px;
                   cursor: pointer;
                   transition: 0.5s ease-out;
-                  &:hover{
+                  &:hover {
                      transform: scale(1.1);
                      color: $color-pink;
                   }
                }
-               li:first-child{
+               li:first-child {
                   margin-bottom: 12px;
                }
-              
             }
          }
       }
    }
-   footer{
+   footer {
       height: 739px;
-      background: 149px -106px url('/images/footer-girl.png') no-repeat , 0px -460px url('/images/background-footer.png');
-      .footer-cont{
+      background: 149px -106px url("/images/footer-girl.png") no-repeat, 0px -460px url("/images/background-footer.png");
+      .footer-cont {
          display: flex;
          flex-direction: column;
          justify-content: right;
          padding: 262px 0px 0px 0px;
          text-align: right;
-         h3{
+         h3 {
             text-align: right;
-            @include ft('Inter', normal, 700, 56px, 120%, $color-white);
+            @include ft("Inter", normal, 700, 56px, 120%, $color-white);
             margin-bottom: 54px;
          }
-         h5{
+         h5 {
             align-self: self-end;
-            display:inline;
-            @include ft('Inter', normal, 400, 28px, 120%, $color-white);
+            display: inline;
+            @include ft("Inter", normal, 400, 28px, 120%, $color-white);
             margin-bottom: 40px;
             width: 883px;
          }
-         form{
-            label{
-               input{
+         form {
+            label {
+               input {
                   width: 337px;
                   height: 51px;
                   border: 1px solid $color-white;
@@ -508,12 +508,12 @@ $color-2d: #2D2D2D;
                   // color: rgba(255, 255, 255, 0.85);
                }
             }
-            button{
-               background: linear-gradient(180deg, #8B1CFB 0%, #B02CDF 100%);
+            button {
+               background: linear-gradient(180deg, #8b1cfb 0%, #b02cdf 100%);
                border-radius: 30px;
                box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
-               border: 1px solid #8B1CFB;
-               @include ft('Inter', normal, 700, 16px, 120%, $color-white);
+               border: 1px solid #8b1cfb;
+               @include ft("Inter", normal, 700, 16px, 120%, $color-white);
                text-transform: uppercase;
                padding: 16px 32px;
                cursor: pointer;
@@ -521,202 +521,191 @@ $color-2d: #2D2D2D;
                margin-left: 32px;
                box-sizing: border-box;
                transition: 0.5s ease-out;
-               &:hover{
+               &:hover {
                   transform: scale(1.1);
                   color: $color-pink;
                   background: $color-white;
                }
             }
-            
          }
-         p{
+         p {
             display: inline;
             align-self: self-end;
-            @include ft('Inter', normal, 400, 24px, 120%, $color-white);
+            @include ft("Inter", normal, 400, 24px, 120%, $color-white);
             padding: 40px 0px 88px 0px;
             width: 529px;
          }
       }
    }
    @media screen and (max-width: 1850px) {
-      .one{
-        background-position: right 40px;
+      .one {
+         background-position: right 40px;
       }
-      .seven-bg{
+      .seven-bg {
          background: right 327px url("/images/coins-1.png") no-repeat;
       }
    }
    @media screen and (max-width: 1600px) {
-      .center{
+      .center {
          max-width: 100%;
          width: 95%;
          margin: 0 auto;
       }
-      .center2{
+      .center2 {
          width: 95%;
       }
-      .center3{
+      .center3 {
          width: 95%;
       }
    }
    @media screen and(max-width: 1450px) {
-      .center1{
+      .center1 {
          max-width: 100%;
          width: 95%;
       }
-      .one{
-         .wrapper-one{
-            div{
-               p{
+      .one {
+         .wrapper-one {
+            div {
+               p {
                   color: $color-black;
                }
             }
-           
          }
       }
-      .four{
-         .four-wrapper{
-            .wid{
-               p{
+      .four {
+         .four-wrapper {
+            .wid {
+               p {
                   color: $color-pink;
                }
             }
          }
       }
-      .five{
-         .five-wrapper{
-            .cards{
-               .card{
+      .five {
+         .five-wrapper {
+            .cards {
+               .card {
                   width: auto;
                }
             }
          }
       }
-      .six-bg{
-         .six{
-            .fit-wrapper{
-               .fit-mirror{
+      .six-bg {
+         .six {
+            .fit-wrapper {
+               .fit-mirror {
                   margin-bottom: 743px;
                }
             }
-          
-          
          }
       }
    }
-   @media screen and (max-width: 1350px){
-      .seven-bg{
-         .seven{
-            .seven-content{
-               .right{
-                  li:not(:first-child){
+   @media screen and (max-width: 1350px) {
+      .seven-bg {
+         .seven {
+            .seven-content {
+               .right {
+                  li:not(:first-child) {
                      color: $color-black;
                   }
                }
-               
             }
          }
       }
    }
    @media screen and(max-width: 1200px) {
-      .four{
-         .four-wrapper{
-            .wid{
+      .four {
+         .four-wrapper {
+            .wid {
                width: 95%;
                align-self: center;
                margin-bottom: 190px;
-               h3{
+               h3 {
                   color: $color-pink;
                   width: 95%;
                }
-               p{
+               p {
                   width: 95%;
                }
             }
          }
       }
-      .six-bg{
-         .six{
-            .fit-wrapper{
-               .fit-mirror{
+      .six-bg {
+         .six {
+            .fit-wrapper {
+               .fit-mirror {
                   margin-bottom: 592px;
                }
             }
-          
-          
          }
       }
    }
    @media screen and(max-width: 1050px) {
-      .two{
-         .two-cards{
+      .two {
+         .two-cards {
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
-            div{
+            div {
                margin: 50px 0;
-              
             }
          }
       }
-      .five{
+      .five {
          background-size: 1805px 860px;
-         .five-wrapper{
-            .cards{
+         .five-wrapper {
+            .cards {
                flex-wrap: wrap;
                justify-content: space-evenly;
-               
-               }
-               .card{
-                  padding-bottom: 35px;
-              
+            }
+            .card {
+               padding-bottom: 35px;
             }
          }
       }
-    
    }
    @media screen and (max-width: 1000px) {
-      header{
-         .ul{
+      header {
+         .ul {
             justify-content: space-around;
             width: 340px;
          }
       }
-      .four{
-         .four-wrapper{
-            .wid{
+      .four {
+         .four-wrapper {
+            .wid {
                margin-bottom: 150px;
             }
          }
       }
-      .six-bg{
-         .six{
-            h3{
+      .six-bg {
+         .six {
+            h3 {
                width: auto;
             }
-            
-            .fit-wrapper{
-               .fit-mirror{
+
+            .fit-wrapper {
+               .fit-mirror {
                   margin-bottom: 424px;
                }
             }
          }
       }
-      footer{
-         .footer-cont{
-            h5{
+      footer {
+         .footer-cont {
+            h5 {
                width: auto;
             }
          }
       }
    }
    @media screen and (max-width: 800px) {
-      header{
+      header {
          justify-content: space-around;
          flex-direction: column;
          padding-top: 20px;
          display: block;
-         .ul{
+         .ul {
             position: fixed;
             flex-direction: column;
             background-color: #626262;
@@ -729,80 +718,75 @@ $color-2d: #2D2D2D;
             border-radius: 0 0 50px 0;
             z-index: 1;
             transition: 0.5s ease-in;
-            .li{
+            .li {
                padding-bottom: 30px;
                color: $color-white;
-               &:hover{
+               &:hover {
                   transform: scale(1.1);
                   color: $color-pink;
                }
             }
          }
-         .fit-wrap{
+         .fit-wrap {
             width: 100%;
             padding-bottom: 20px;
-            .checkbox-button{
-               display:flex;
+            .checkbox-button {
+               display: flex;
             }
          }
-        
       }
-      .one{
+      .one {
          background-position: center;
-         .wrapper-one{
-            div{
+         .wrapper-one {
+            div {
                width: auto;
             }
-           
          }
       }
-      .three{
-         .three-wrapper{
-            
-            img{
+      .three {
+         .three-wrapper {
+            img {
                width: 95%;
             }
-            h2{
+            h2 {
                width: 95%;
             }
-            p{
+            p {
                width: 95%;
             }
          }
-         
       }
-      .four{
-         .four-wrapper{
-            .wid{
+      .four {
+         .four-wrapper {
+            .wid {
                margin-bottom: 90px;
                width: 95%;
             }
          }
       }
-      .five{
+      .five {
          background-size: 1805px 1060px;
       }
-      .six-bg{
-         
-         .six{
+      .six-bg {
+         .six {
             background-position: 0px 900px;
-            .fit-wrapper{
+            .fit-wrapper {
                margin-bottom: 436px;
                flex-direction: column;
                justify-content: center;
-               .fit-mirror{
+               .fit-mirror {
                   margin: 0px 0px 25px;
                }
             }
          }
       }
-      .seven-bg{
-         .seven{
-            h2{
+      .seven-bg {
+         .seven {
+            h2 {
                font-size: 40px;
                padding: 85px 0px 60px;
             }
-            .seven-content{
+            .seven-content {
                justify-content: center;
                padding: 0px 0px;
                background: 0px 0px url(/images/rectangle-7.png) no-repeat;
@@ -810,175 +794,170 @@ $color-2d: #2D2D2D;
             }
          }
       }
-    
    }
    @media screen and (max-width: 650px) {
-      header{
+      header {
          flex-direction: column;
          justify-content: space-evenly;
          height: 200px;
-         button{
+         button {
             width: 100%;
          }
       }
-      .one{
-         .wrapper-one{
+      .one {
+         .wrapper-one {
             text-align: center;
-            div{
+            div {
                margin-bottom: 100px;
-               h1{
+               h1 {
                   font-size: 40px;
                   margin-top: 60px;
                }
-               p{
+               p {
                   margin-bottom: 30px;
                   font-size: 16px;
                }
-               .btn{
+               .btn {
                   display: flex;
                   flex-direction: column;
                   align-items: center;
                   justify-content: space-evenly;
                   height: 250px;
-                  .btn-left{
+                  .btn-left {
                      margin: 0px auto;
                   }
-                  .btn-right{
+                  .btn-right {
                      margin: 0px auto;
                   }
                }
             }
-           
          }
       }
-      .two{
-         .two-cards{
-           
-            div{
-               h3{
+      .two {
+         .two-cards {
+            div {
+               h3 {
                   width: auto;
                   font-size: 20px;
                }
-               p{
+               p {
                   width: auto;
                   font-size: 16px;
                }
             }
          }
       }
-      .three{
-         .three-wrapper{
-            h2{
+      .three {
+         .three-wrapper {
+            h2 {
                font-size: 40px;
             }
-            p{
+            p {
                font-size: 20px;
                margin-bottom: 60px;
             }
          }
       }
-      .four{
+      .four {
          background-position: center;
-         .four-wrapper{
-            .wid{
+         .four-wrapper {
+            .wid {
                margin-bottom: 150px;
-               h3{
+               h3 {
                   font-size: 40px;
                }
-               p{
+               p {
                   font-size: 20px;
                }
             }
          }
       }
-      .five{
-         .five-wrapper{
-            .earn{
+      .five {
+         .five-wrapper {
+            .earn {
                font-size: 40px;
             }
-            .cards{
-               .card{
-                  h4{
+            .cards {
+               .card {
+                  h4 {
                      font-size: 20px;
                   }
                }
             }
          }
       }
-      .six-bg{
+      .six-bg {
          margin: 0 auto;
-         .six{
+         .six {
             background-position: 0px 630px;
-            h3{
+            h3 {
                font-size: 40px;
                margin: 70px 0px 40px;
             }
-            .fit-wrapper{
-               .fit-mirror{
-                  h4{
+            .fit-wrapper {
+               .fit-mirror {
+                  h4 {
                      font-size: 26px;
-                    
                   }
-                  h5{
+                  h5 {
                      font-size: 16px;
                      margin: 20px 0px;
                   }
-                  p{
+                  p {
                      font-size: 16px;
                   }
                }
             }
          }
       }
-      .seven-bg{
-         .seven{
-            h2{
+      .seven-bg {
+         .seven {
+            h2 {
                font-size: 40px;
                padding: 70px 0px 50px;
             }
-            .seven-content{
-               .left{
+            .seven-content {
+               .left {
                   font-size: 24px;
-                  li:not(:first-child){
+                  li:not(:first-child) {
                      font-size: 16px;
                   }
                }
-               .right{
+               .right {
                   font-size: 24px;
-                  li:not(:first-child){
+                  li:not(:first-child) {
                      font-size: 16px;
                   }
                }
-               
             }
          }
       }
-      footer{
+      footer {
          background: center -106px url(/images/footer-girl.png) no-repeat, 0px -460px url(/images/background-footer.png);
-         
-         .footer-cont{
-            h3{
+
+         .footer-cont {
+            h3 {
                font-size: 40px;
                margin-bottom: 27px;
             }
-            h5{
+            h5 {
                font-size: 16px;
                margin: 20px 0px;
             }
 
-            form{
+            form {
                display: flex;
                flex-direction: column;
-               label{
-                  input{
+               label {
+                  input {
                      width: 100%;
                   }
                }
-               button{
+               button {
                   margin: 15px 0px 0px;
                }
             }
-            p{
+            p {
                font-size: 16px;
                width: auto;
                padding: 20px 0px;
@@ -987,20 +966,20 @@ $color-2d: #2D2D2D;
       }
    }
    @media screen and(max-width: 550px) {
-      .six-bg{
-         .six{
-            .fit-wrapper{
+      .six-bg {
+         .six {
+            .fit-wrapper {
                margin-bottom: 320px;
             }
          }
       }
-      .seven-bg{
-         .seven{
-            .seven-content{
-               .left{
+      .seven-bg {
+         .seven {
+            .seven-content {
+               .left {
                   padding: 30px 4px 30px 30px;
                }
-               .right{
+               .right {
                   padding: 30px 30px 30px 0px;
                }
             }
@@ -1008,54 +987,54 @@ $color-2d: #2D2D2D;
       }
    }
    @media screen and (max-width: 450px) {
-      header{
-         button{
+      header {
+         button {
             width: 100%;
          }
       }
-      .four{
-         .four-wrapper{
-            .wid{
+      .four {
+         .four-wrapper {
+            .wid {
                margin: 90px 0px 100px;
             }
          }
       }
-      .five{
+      .five {
          background-size: 1805px 1260px;
       }
-      .six-bg{
+      .six-bg {
          margin: 0 auto;
-         .six{
+         .six {
             background-position: 0px 680px;
-            .fit-wrapper{
+            .fit-wrapper {
                margin-bottom: 280px;
             }
          }
       }
-      .seven-bg{
-         .seven{
-            .seven-content{
-               .left{
+      .seven-bg {
+         .seven {
+            .seven-content {
+               .left {
                   padding: 5px 4px 0px 5px;
                }
-               .right{
+               .right {
                   padding: 5px 5px 5px 0px;
                }
             }
          }
       }
    }
-   @media screen and (max-width: 450px){
-      .seven-bg{
-         .seven{
-            .seven-content{
-               .left{
-                  li:nth-child(4){
+   @media screen and (max-width: 450px) {
+      .seven-bg {
+         .seven {
+            .seven-content {
+               .left {
+                  li:nth-child(4) {
                      height: 58px;
                   }
                }
-               .right{
-                  li:nth-child(4){
+               .right {
+                  li:nth-child(4) {
                      height: 58px;
                   }
                }
@@ -1063,13 +1042,13 @@ $color-2d: #2D2D2D;
          }
       }
    }
-   @media screen and(max-width: 350px){
-      .six-bg{
-         .six{
-            h3{
-               font-size:38px;
+   @media screen and(max-width: 350px) {
+      .six-bg {
+         .six {
+            h3 {
+               font-size: 38px;
             }
-            .fit-wrapper{
+            .fit-wrapper {
                margin-bottom: 208px;
             }
          }
