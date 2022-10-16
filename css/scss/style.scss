@@ -705,6 +705,7 @@ $color-2d: #2d2d2d;
          flex-direction: column;
          padding-top: 20px;
          display: block;
+         text-align: center;
          .ul {
             position: fixed;
             flex-direction: column;
@@ -714,7 +715,7 @@ $color-2d: #2d2d2d;
             height: 200px;
             padding: 100px 100px;
             top: 0px;
-            left: -100%;
+            left: -800px;
             border-radius: 0 0 50px 0;
             z-index: 1;
             transition: 0.5s ease-in;
